@@ -1,7 +1,11 @@
 var someTextV;
 console.log(someTextV);
+
+console.log()
+
 someTextV = 7;
 console.log(someTextV)
+
 var SomeTextV;
 SomeTextV = 5;
 console.log(SomeTextV);
