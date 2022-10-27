@@ -280,4 +280,59 @@ switch(a) {
 console.log(result);
 
 console.log()
+//short - FALL THROUGH
+switch(a) {
+    case "Novi Sad":
+    case "Beograd":
+    case "Kula":
+    case "Sremski Karlovci":
+    case "Arandjelovac":
+        result="Srbija";
+        break;
+    case "Zagreb":
+    case "Osijek":
+        result="Hrvatska";
+        break;
+    case "Budapest":
+        result="Madjarska";
+        break;
+    case "Derby":
+    case "London":
+    case "Warwick":
+        result="England";
+        break;
+    case "Banja Luka":
+    case "Sarajevo":
+    case "Bijeljina":
+    case "Tuzla":
+        result="BiH";
+        break;
+    default:
+        result="izaberite drugi grad";
+        break;
+}
+console.log(result)
+
+console.log()
 //task 8
+var a=10, b=0, c="/";
+var result="";
+
+switch(c) {
+    case "+":
+        result=a+b;
+        break;
+    case "-":
+        result=a-b;
+        break;
+    case "*":
+        result=a*b;
+        break;
+    case "/":
+        result=a/b;
+        break;
+    default:
+        result="Not defined operator";
+        break;
+}
+console.log(result)

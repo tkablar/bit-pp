@@ -1,0 +1,36 @@
+div.prvi {
+    color: darkTurquoise;
+    background-color: antiquewhite;
+    opacity: 0.5;
+}
+
+div.drugi {
+    color: rgb(0, 206, 209);
+    background-color: rgba(0, 100, 150, 0.5);
+}
+
+div.treci {
+    color: #00CCCC;
+    background-color: #010203;
+}
+
+td.prva {
+    background-color: AliceBlue;
+}
+
+td.druga {
+    background-color: hotpink;
+}
+
+td.treca {
+    background-color: bisque;
+}
+
+td.cetvrta {
+    background-color: aquamarine;
+}
+
+td.peta {
+    background-color: blue;
+}
+

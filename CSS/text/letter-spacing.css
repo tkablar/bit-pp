@@ -1,0 +1,13 @@
+div.prvi {
+    letter-spacing: 5px;
+    text-align: left;
+}
+
+div.drugi {
+    line-height: 200%;
+    text-align: right;
+}
+
+div.treci {
+    text-align: center;
+}

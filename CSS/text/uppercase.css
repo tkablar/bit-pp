@@ -1,0 +1,9 @@
+div.prvi {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+div.drugi {
+    text-transform: lowercase;
+    text-decoration: line-through;
+}

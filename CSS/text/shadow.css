@@ -1,0 +1,24 @@
+ul {
+    color: brown;
+    text-shadow: 2px 2px 4px gray;
+}
+
+a:active {
+    color: red;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+a:focus {
+    color: blue;
+}
