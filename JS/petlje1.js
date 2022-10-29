@@ -13,9 +13,8 @@ console.log()
 //task2
 sum=0
 for(i=1; i<=1000; i++) {
-    if(i%3==0 && i%5==0)
-    { sum+=i
-
+    if(i%3==0 && i%5==0) { 
+        sum+=i
     }
 }
 console.log(sum)
@@ -62,10 +61,16 @@ for(i=0; i<a.length; i++) {
 }
 
 //na casu
+var a=[ 
+    [1, 2, 1, 24],
+    [8, 11, 9, 4],
+    [7, 0, 7, 27]
+];
+
 for( var i=0; i<a.length; i++) {
     console.log(a[i])
     for(var j=0; j<a[i].length; j++) {
-        console.log(a[i{j}])
+        console.log(a[i][j])
     }
 }
 

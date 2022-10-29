@@ -78,7 +78,7 @@ var sum=0;
 for(i=0; i < word.length; i++) {
     sum+=1;
 }
-console.log("There is " + sum + " letters in this word");
+console.log("There is " + sum + " letters in word" + word);
 console.log("There is " + word.length + " letters in this word");
 
 console.log()

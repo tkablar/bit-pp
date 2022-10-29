@@ -1,0 +1,71 @@
+div.prvi {
+    background-color: yellow;
+    width: 400px;
+    height: 500px;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+div.drugi {
+    background-color: red;
+    width: 400px;
+    height: 300px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+p.pprvi {
+    background-color: yellow;
+    border: 5px dashed red;
+    padding: 0px;
+    width: 300px;
+    margin: 20px;
+    display: inline-block;
+
+}
+
+p.pdrugi {
+    background-color: yellow;
+    border: 5px solid green;
+    padding: 0px 0px 0px 0px;
+    width: 400px;
+    margin: 20px;
+    display: inline-block;
+    display: none;
+}
+
+p.ptreci {
+    background-color: yellow;
+    border: 5px dashed red;
+    padding: 0px;
+    width: 200px;
+    margin: 20px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+h1 {
+    width: 960px;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    margin: 50px auto 50px auto;
+    background-color: bisque;
+    color: brown;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-box-shadow: 15px 18px 90px 0px rgba(115,115,115,1);
+    -moz-box-shadow: 15px 18px 90px 0px rgba(115,115,115,1);
+    box-shadow: 15px 18px 90px 0px rgba(115,115,115,1);
+    border-radius: 60px;
+}
+
+
+div.proba {
+    background-color: aquamarine;
+    border-width: 10px;
+    border-style: groove;
+    border-color: rgb(46, 131, 131);
+    width: 200px;
+    margin: auto;
+    padding: 2em;
+}
