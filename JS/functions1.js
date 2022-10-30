@@ -53,46 +53,107 @@ console.log(mean(50, 25, 15, 100));
 
 console.log();
 //task 5
-function square(a) {
-    if(a==5) {
-        return "\*\*\*\*\* \n\*   \* \n\*   \*\n\*   \*\n\*\*\*\*\*";
-    } else{
-        return "\*\*\*";
+//function square(a) {
+//    if(a==5) {
+//        return "\*\*\*\*\* \n\*   \* \n\*   \*\n\*   \*\n\*\*\*\*\*";
+//    } else{
+//        return "\*\*\*";
+//    }
+//}
+
+//console.log(square(5));
+
+var c="\*";
+var d=5;
+function printSquare(a, b) {
+    for(var i=0; i<b; i++) {
+        if(i==0 || i==b-1) {
+            printFullRow(a, b)    
+        } else {
+            printFirstAndLast(a, b)   
+        }
     }
 }
 
-console.log(square(5));
+function printFullRow(a, b) {
+    result="";
+    for(var i=0; i<b; i++) {
+         result+=a;
+    }
+    console.log(result);
+}
+
+function printFirstAndLast(a, b) {
+    result="";
+    for(var i=0; i<b; i++) {
+        if(i==0 || i==b-1) {
+            result+=a;
+        } else {
+            result+=" ";
+        }
+    }
+    console.log(result)
+}
+
+printSquare(c, d)
+printSquare(c,9)
+
 
 console.log();
 //task 6
-function draw(a, b, c) {
-    if(a==5 && b==3 && c==7) {
-        return "\*\*\*\*\*\n\*\*\*\n\*\*\*\*\*\*\*";
-    } else {
-        return "not good values";
-    }
+//function draw(a, b, c) {
+//    if(a==5 && b==3 && c==7) {
+//        return "\*\*\*\*\*\n\*\*\*\n\*\*\*\*\*\*\*";
+//    } else {
+//       return "not good values";
+//    }
+//}
+
+//console.log(draw(5, 3, 7))
+
+var m=5;
+var g=3;
+var l=7;
+var p="\*"
+
+function draw(a, b, c, d) {
+    printFullRow(d, a);
+    printFullRow(d, b);
+    printFullRow(d, c);
 }
 
-console.log(draw(5, 3, 7))
+draw(m, g, l, p);
+
+
 
 console.log();
 //task 7
+//function digitNum(a) {
+//    if(a<10) {
+//        return "jednocifren";
+//    }
+//    if(a<100) {
+//        return "dvocifren";
+//    }
+//    if(a<1000) {
+//        return "trocifren";
+//    }
+//    if(a<10000) {
+//        return "cetvorocifren";
+//    }
+//}
+//
+//console.log(digitNum(9));
+
+var l=235;
+
 function digitNum(a) {
-    if(a<10) {
-        return "jednocifren";
-    }
-    if(a<100) {
-        return "dvocifren";
-    }
-    if(a<1000) {
-        return "trocifren";
-    }
-    if(a<10000) {
-        return "cetvorocifren";
-    }
+    var result="" + a;
+    return result.length;
 }
 
-console.log(digitNum(9));
+console.log("Number " + l + " has " + digitNum(l) + " digits.");
+
 
 console.log();
 //task 8
@@ -132,22 +193,22 @@ console.log()
 //task 10
 var b="TamarA"
 var c="a"
-var d="A"
 
-function Appa(a) {
+function Appa(a, b) {
     var result=0;
+    a = a.toLowerCase();//tamara
     for(var i=0; i<a.length; i++) {
-        if(a[i]===c) {
-            result++
-        }
-        if(a[i]===d) {
+        // if(a[i]===c || a[i]===d) {
+        //     result++
+        // }
+        if(a[i]===b) {
             result++
         }
     }
     return result
 }
 
-console.log(Appa(b));
+console.log(Appa(b, c));
 
 console.log();
 //task 11
@@ -164,3 +225,17 @@ function repeat(c, d) {
 }
 
 console.log(repeat(a, b));
+
+//drugacije resenje
+var a="abc";
+var b=4;
+
+function concatString(c, d) {
+    var result = "";
+    for(var i=0; i<d; i++) {
+        result += c;
+    }
+    return result;
+}
+
+console.log(concatString(a, b));

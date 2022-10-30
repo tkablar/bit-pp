@@ -3,10 +3,10 @@ var input0="SomeRandomString";
 var input1=365
 
 function IsOrNot(a) {
-    if(typeof a === "number") {
-        return false;
+    if(typeof a === "string") {
+        return true;
     } else {
-        return true
+        return false;
     }    
 }
 
@@ -20,7 +20,7 @@ var input2="";
 var input3=21;
 
 function BlankOrNot(a) {
-    if(a.length === 0) {
+    if(typeof a==="string" && a === " ") {
         return true;
     }
     else{
@@ -68,6 +68,23 @@ console.log(letterOcc(l, z));
 
 console.log();
 //task 5
+// var s="String sa Y je super ";
+// var m="Y";
+// var o="Z"
+
+// function charOcc(a, b) {
+//     var result=0;
+//     for(var i=0; i<a.length; i++) {
+//         if(a[i] === b) {
+//             result = a.indexOf(b);
+//         }
+//     }   
+//     return result
+// }
+
+// console.log(charOcc(s, m));
+// console.log(charOcc(s, o)); 
+
 var s="String sa Y je super ";
 var m="Y";
 var o="Z"
@@ -75,18 +92,34 @@ var o="Z"
 function charOcc(a, b) {
     var result=0;
     for(var i=0; i<a.length; i++) {
-        if(a[i] === b) {
-            result = a.indexOf(b);
-        }
+         result = a.indexOf(b);
     }   
     return result
 }
 
 console.log(charOcc(s, m));
-console.log(charOcc(s, o)); 
+console.log(charOcc(s, o));
+
 
 console.log()
 //task 6
+// var p="Neki super Z string sa puno Z Z Z";
+// var t="Y";
+// var x="Z";
+
+// function lastOcc(a, b) {
+//     var result=0;
+//     for(var i=0; i<a.length; i++) {
+//         if(a[i] === b) {
+//             result = a.lastIndexOf(b)
+//         }
+//     }
+//     return result
+// }
+
+// console.log(lastOcc(p, t));
+// console.log(lastOcc(p, x));
+
 var p="Neki super Z string sa puno Z Z Z";
 var t="Y";
 var x="Z";
@@ -94,9 +127,7 @@ var x="Z";
 function lastOcc(a, b) {
     var result=0;
     for(var i=0; i<a.length; i++) {
-        if(a[i] === b) {
-            result = a.lastIndexOf(b)
-        }
+        result = a.lastIndexOf(b)
     }
     return result
 }
@@ -105,7 +136,9 @@ console.log(lastOcc(p, t));
 console.log(lastOcc(p, x));
 
 console.log();
-//task 7
+//task 7//
+//Write a function to convert string into an array. Space in a string should be represented as
+//“null” in new array.
 var l="Random";
 
 function stringToArray(a) {
@@ -116,4 +149,39 @@ function stringToArray(a) {
     return result
 }
 
-console.log(stringToArray(l))
+console.log(stringToArray(l));
+
+
+var h="My random string";
+
+function stringToArray(a) {
+    var result=[]
+    for(var i=0; i<a.length; i++) {
+        result.push(a[i]);
+        if(a[i] === " ") {
+            result.push(null);
+        }
+    }
+    return result
+}
+
+console.log(stringToArray(h));
+
+
+console.log();
+//task 8
+var x=7;
+
+function primeOrNot(a) {
+    var result="Number "
+     if(a>1 && a/a==1 && a%2!=0) {
+        result+= a + " is a Prime number"
+    } else {
+        result+= a + " is not a Prime number"
+    }
+    return result
+}
+
+console.log(primeOrNot(x));
+console.log(primeOrNot(-5));
+console.log(primeOrNot(24));
