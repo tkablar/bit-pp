@@ -51,29 +51,24 @@ function mean(a, b, c, d) {
 
 console.log(mean(50, 25, 15, 100));
 
+var l=50;
+var p=25;
+var t=15;
+var z=100;
+
+function arithMean(a, b, c, d) {
+    result=(a+b+c+d)/4;
+    return result;
+}
+
+console.log(arithMean(l,p,t,z));
+
+
 console.log();
 //task 5
-//function square(a) {
-//    if(a==5) {
-//        return "\*\*\*\*\* \n\*   \* \n\*   \*\n\*   \*\n\*\*\*\*\*";
-//    } else{
-//        return "\*\*\*";
-//    }
-//}
-
-//console.log(square(5));
 
 var c="\*";
 var d=5;
-function printSquare(a, b) {
-    for(var i=0; i<b; i++) {
-        if(i==0 || i==b-1) {
-            printFullRow(a, b)    
-        } else {
-            printFirstAndLast(a, b)   
-        }
-    }
-}
 
 function printFullRow(a, b) {
     result="";
@@ -95,26 +90,35 @@ function printFirstAndLast(a, b) {
     console.log(result)
 }
 
-printSquare(c, d)
-printSquare(c,9)
+function printSquare(a, b) {
+    for(var i=0; i<b; i++) {
+        if(i==0 || i==b-1) {
+            printFullRow(a, b)    
+        } else {
+            printFirstAndLast(a, b)   
+        }
+    }
+}
+
+printSquare(c, d);
+printSquare(c, 9);
 
 
 console.log();
 //task 6
-//function draw(a, b, c) {
-//    if(a==5 && b==3 && c==7) {
-//        return "\*\*\*\*\*\n\*\*\*\n\*\*\*\*\*\*\*";
-//    } else {
-//       return "not good values";
-//    }
-//}
-
-//console.log(draw(5, 3, 7))
 
 var m=5;
 var g=3;
 var l=7;
 var p="\*"
+
+function printFullRow(a, b) {
+    result="";
+    for(var i=0; i<b; i++) {
+         result+=a;
+    }
+    console.log(result);
+}
 
 function draw(a, b, c, d) {
     printFullRow(d, a);
@@ -128,22 +132,6 @@ draw(m, g, l, p);
 
 console.log();
 //task 7
-//function digitNum(a) {
-//    if(a<10) {
-//        return "jednocifren";
-//    }
-//    if(a<100) {
-//        return "dvocifren";
-//    }
-//    if(a<1000) {
-//        return "trocifren";
-//    }
-//    if(a<10000) {
-//        return "cetvorocifren";
-//    }
-//}
-//
-//console.log(digitNum(9));
 
 var l=235;
 
@@ -198,9 +186,6 @@ function Appa(a, b) {
     var result=0;
     a = a.toLowerCase();//tamara
     for(var i=0; i<a.length; i++) {
-        // if(a[i]===c || a[i]===d) {
-        //     result++
-        // }
         if(a[i]===b) {
             result++
         }

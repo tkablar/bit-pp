@@ -1,101 +1,152 @@
 //task 1
+var e=3, a=[5, -4.2, 3, 7], i=0;
+c="no"
+for(i=0;i<a.length;i++) {
+    if(a[i]===e) 
+    c="yes"
+} 
 
-var a=1;
-var sum=0;
+console.log(c)
 
-for(a=1; a<= 10; a++) {
-    sum+=a;
+var e=3, a=[5, -4.2, 18, 7];
+c="no";
+
+for(i=0; i<a.length; i++) {
+    if(a[i]===e)
+    c="yes";
 }
-console.log("Sum of natural numbers: ", sum);
+
+console.log(c)
+
 
 console.log()
 //task 2
-var a=1;
-var cube=a*a*a;
-result=""
-
-for(i=1; i<=10; i++) {
-    cube=i*i*i
-    console.log(i + " up to cube equals " + cube);
-} 
-    
-//console.log("cube of the number ", a, " is: ", cube);
-
-console.log()
-//task 3
-var a=6;
-var fact=1
-for(i=1; i<=a; i++) {
-    fact*=i;
+a=[-3, 11, 5, 3.4, -8];
+for(i=0; i<a.length; i++) {
+    if(a[i]>=0)
+    a[i]*=2;
 }
-console.log("The factorial of "+ a + " is " + fact);
+console.log(a)
 
 console.log()
-console.log("Task 4")
-//task 4
-//Write a code to display the n terms of
-//even natural number and their sum.
-//Example:
-//Input number of terms - 5. 
-//Expected output: "The even numbers are 2, 4, 6, 8, 10".
-var input=5;
-var even=[];
-var sum=0;
-for(i=1; i<=input; i++) {
-    even.push(i*2);
-    sum+=i*2;
-}
-console.log("The even numbers are: " + even);
-console.log("The sum of even numbers is: " + sum);
+//task3
+var array=[4, 2, 2, -1, 6];
+var index = 0;
+var minimum=array[index];
 
-
-
-console.log()
-//task 5
-//5.Write a code to calculate the sum of digits in a number
-//and show that sum on screen.
-//Example: "Sum of digits in number 232 is 7".
-var a="371";
-var sum = 0;
-console.log(a.length)
-
-for (i = 0; i < a.length; i++) {
-    sum += (+a[i]);
-}
-
-console.log("Sum of digits in number " + a + " is " + sum);
-
-console.log()
-console.log("Task 6")
-//task 6
-//Write a code to count all letters in a word
-//and show that count on screen.
-//Example: Given word is "Eclip542se".
-//Result should be something like "There is 7 letters in this word".
-
-var word="Eclip542se";
-var sum=0;
-for(i=0; i < word.length; i++) {
-    sum+=1;
-}
-console.log("There is " + sum + " letters in word" + word);
-console.log("There is " + word.length + " letters in this word");
-
-console.log()
-console.log("Task 7")
-//task 7
-//Write a code to find on which index in array
-//is letter "C" and show that index on screen.
-//Given array is: [1, 3, 32, $, g, h, t, s, c, 66, 23, h2].
-
-var array=[1, 3, 32, "$" , "g", "h", "t", "s", "c", 66, 23, "h2"];
-
-for(i=0; i<array.length; i++) {
-    if(array[i]==="c") {
-        console.log("The index of the letter \'c\' is: " + i);
+for(var i=1; i<array.length; i++) {
+    if(array[i] < minimum) {
+        minimum = array[i];
+        index = i
     }
 }
 
+console.log(minimum, index)
+console.log(index)
+
+console.log()
+//task4
+minimum2=array[0]
+for(i=1; i<array.length; i++) {
+    if(array[i] < minimum2 && array[i] !== minimum) {
+        minimum2=array[i]
+    }
+}
+console.log(minimum2)
+
+console.log()
+//task5
+var a=[3, 11, -5, -3, 2];
+var sum=0;
+for(i=0; i<a.length; i++) {
+    if(a[i]>=0) {
+        sum+=a[i]
+    }
+}
+console.log(sum);
+
+console.log()
+//task 6
+var array=[2, 4, -2, 7, -2, 4, 2];
+var symmetric = "symmetric.";
+var lastIndex = array.length - 1;
+
+for(i=0; i<array.length; i++) {
+    if (array[i] !== array[lastIndex - i]) {
+        symmetric = "not symmetric."
+    }
+}
+
+console.log("This array is " + symmetric);
+
+var array=[3, 4, 12, 8];
+var symmetric = "symmetric.";
+var lastIndex = array.length - 1;
+
+for(i=0; i<array.length; i++) {
+    if (array[i] !== array[lastIndex - i]) {
+        symmetric = "not symmetric."
+    }
+}
+
+console.log("This array is " + symmetric);
+
+console.log()
+//task7
+var b=[4, 5, 6, 2];
+var c=[3, 8, 11, 9];
+var d=[]
+
+for(i=0; i<b.length; i++) {
+    d.push(b[i])
+    d.push(c[i])
+}
+console.log(d)
+
+//na casu
 
 
 
+
+console.log()
+//task8
+var array1=[4, 5, 6, 2];
+var array2=[3, 8, 11, 9];
+
+var array3=array1.concat(array2)
+console.log(array3)
+
+console.log();
+//task9
+var e=2;
+var a=[4, 6, 2, 8, 2, 2];
+
+var newA=[];
+
+for(var i=0; i < a.length; i++) {
+    if(a[i] !=e) {
+        newA.push(a[i]);
+    }
+}
+console.log(newA);
+
+console.log();
+//task10
+var e=78
+var p=3
+var a=[2, -2, 33, 12, 5, 8];
+var newN=[];
+
+    if(p>a.length) {
+        console.log("Erorr")
+    } else {
+        
+        for(i=0; i<a.length; i++) {
+            if(i===p) {
+                newN.push(e)
+            }
+            newN.push(a[i]);
+        }
+    }
+
+console.log(newN);

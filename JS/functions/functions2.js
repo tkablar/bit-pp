@@ -157,9 +157,10 @@ var h="My random string";
 function stringToArray(a) {
     var result=[]
     for(var i=0; i<a.length; i++) {
-        result.push(a[i]);
         if(a[i] === " ") {
             result.push(null);
+        } else {
+            result.push(a[i]);
         }
     }
     return result
@@ -173,15 +174,119 @@ console.log();
 var x=7;
 
 function primeOrNot(a) {
-    var result="Number "
-     if(a>1 && a/a==1 && a%2!=0) {
-        result+= a + " is a Prime number"
-    } else {
-        result+= a + " is not a Prime number"
+    if(a <=1) {
+        return "Number " + a + " is not a Prime number"
+    } 
+
+    var s = Math.sqrt(a);
+    for (var i = 2; i <= s; i++){
+        if (a % i === 0) {
+            return "Number " + a + " is not a Prime number"
+        }
     }
-    return result
+
+    return "Number " + a + " is a Prime number"
 }
 
 console.log(primeOrNot(x));
 console.log(primeOrNot(-5));
 console.log(primeOrNot(24));
+console.log(primeOrNot(9));
+
+console.log();
+//task 9
+
+var x="My random string";
+var y="_";
+var p="-";
+var t="+";
+
+function spaceToDash(a, b = "-") {
+    var result="";
+    for(var i=0; i<a.length; i++) {
+        if(a[i]==" ") {
+            result+=b;
+        } else {
+            result+=a[i];
+        }
+    }
+    return result;
+}
+
+console.log(spaceToDash(x, y));
+console.log(spaceToDash(x, p));
+console.log(spaceToDash(x, t));
+console.log(spaceToDash(x));
+
+console.log();
+//task 10
+var x="My random string";
+var y=7;
+
+function newString(a, c) {
+    var result="";
+    for(var i=0; i<c; i++) {
+            result+=a[i];
+    }
+    return result + "...";
+}
+
+console.log(newString(x, y));
+
+
+
+console.log();
+//task 11
+var array1=["1", "21","tamara", undefined, "42", "1e+3", Infinity];
+var arrayResult=[];
+
+function stringToNumbers(a) {
+    var b=[];
+    for(var i=0; i<a.length; i++) {
+        if (!isNaN(a[i])) {
+            b.push(+a[i]);
+        } 
+    }
+    return b;
+}
+
+console.log(stringToNumbers(array1));
+
+
+console.log();
+//task 12
+var x=1975;
+var z=2022;
+var retireMen=65;
+var retireWomen=60;
+
+function yearsTillRetireMen(currentYear, birthYear, retireMen=65) {
+    result1=(currentYear-birthYear);
+    if(retireMen-result1<=0) {
+        result2="This person is retired"
+    } else {
+        result2="This person has " +(retireMen-result1) +" years until retirement";
+    }
+    return result2;
+    
+}
+
+console.log(yearsTillRetireMen(z, x));
+
+var x=1975;
+var z=2022;
+var retireMen=65;
+var retireWomen=60;
+
+function yearsTillRetireWomen(currentYear, birthYear, retireWomen=60) {
+    result1=(currentYear-birthYear);
+    if(retireWomen-result1<=0) {
+        result2="This person is retired";
+    } else {
+        result2="This person has " + (retireWomen-result1) + " years until retirement";
+    }
+    return result2
+
+}
+
+console.log(yearsTillRetireWomen(z, x));

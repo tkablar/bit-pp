@@ -1,3 +1,4 @@
+
 .prva {
     list-style: circle;
 }
@@ -26,6 +27,10 @@
 
 li:hover {
     cursor:alias;
+}
+
+h1 {
+    margin: auto;
 }
 
 table {
@@ -75,11 +80,12 @@ th, td {
 div.form {
     background-color: rgb(240, 240, 240);
     margin: auto;
-    width: 230px;
+    width: 310px;
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 30px;
     border-radius: 30px 0px;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -97,7 +103,7 @@ span {
 }
 
 hr {
-    width: 225px;
+    width: 300px;
     color: rgb(186, 185, 185);
     border: 1px solid;
 }
@@ -111,7 +117,8 @@ label {
 }
 
 input {
-    
+
+    width: 280px;
     display: block;
     padding: 10px 10px 10px 10px;
     background-color: rgb(249, 249, 249);
@@ -126,17 +133,18 @@ input {
 }
 
 input:hover {
-    cursor: progress;
+    cursor:help;
 }
 
 button {
     background-color: brown;
     color: white;
     border-radius: 5px;
-    width: 210px;
+    width: 300px;
     padding: 10px;
     border: none;
     margin-top: 20px;
+    font-size: small ;
 }
 
 button:hover {
