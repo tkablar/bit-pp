@@ -21,7 +21,11 @@
 
 .sesta {
     list-style-image: url(https://www.w3schools.com/cssref/sqpurple.gif);
-    list-style: inside;
+    /*list-style: inside;*/
+}
+
+li:hover {
+    cursor:alias;
 }
 
 table {
@@ -35,9 +39,17 @@ th {
     padding: 10px;
 }
 
+th:hover {
+    cursor:crosshair;
+}
+
 td {
     padding: 10px 0px 10px 0px;
     height: 100px;
+}
+
+td:hover {
+    cursor: grab;
 }
 
 tr {
@@ -67,25 +79,35 @@ div.form {
     padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 30px;
+    border-radius: 30px 0px;
 }
 
 h2 {
-    font-size: 200%;
+    font-size: 2.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(50, 48, 43);
     text-align: center;
-    padding: 30px;
-    padding-bottom: 2px;
+    padding: 40px;
+    padding-bottom: 1px;
+    margin-bottom: 2px;
+    
+}
+span {
+    color:rgb(249, 191, 17);
 }
 
 hr {
-    width: 200px;
-    color: gray;
+    width: 225px;
+    color: rgb(186, 185, 185);
+    border: 1px solid;
 }
 
 label {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
+    color: rgb(44, 43, 43);
+    padding-bottom: 5px;
+    display:block;
 }
 
 input {
@@ -97,9 +119,9 @@ input {
     font-size: 100%;
     border-radius: 5px;
     border: none;
-    -webkit-box-shadow: 3px 4px 23px -1px rgba(115,115,115,1);
-    -moz-box-shadow: 3px 4px 23px -1px rgba(115,115,115,1);
-    box-shadow: 3px 4px 23px -1px rgba(115,115,115,1);
+    -webkit-box-shadow: 1px 2px 11px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 11px 1px rgba(0,0,0,0.75);
+    box-shadow: 1px 2px 11px 1px rgba(0,0,0,0.75);
     
 }
 
@@ -118,5 +140,7 @@ button {
 }
 
 button:hover {
-    cursor: grabbing;
+    /*cursor: grabbing;*/
+    /*cursor: url(./images/icons8-hand-cursor.svg);*/
+    cursor: url(https://icons8.com/icon/11205/hand-cursor);
 }

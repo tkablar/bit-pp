@@ -68,7 +68,10 @@ var MB = 1000;
 console.log((GB*4*MB)/article);
 
 // 9
-
+a*=2;
+b+=3;
+c/=5;
+d-=7
 
 // 10
 var ime = "Tamara";
@@ -127,7 +130,7 @@ p=false, q=true;
 console.log(p&&q); 
 console.log(p||q);
 
-console.log("p&&q =>", p&&q);
+console.log(p&&q);
 
 p=false, q=false;
 console.log(p&&q, p||q);
@@ -158,11 +161,7 @@ if(speed<=120 && speed>=60) {
     console.log("We are not driving safe")
 }
 
-var nesto = speed<=120 && speed>=60;
-console.log(nesto)
 
-var speed2=75;
-console.log(speed2>=60 && speed2<=120)
 
 
 
