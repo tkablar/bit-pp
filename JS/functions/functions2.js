@@ -20,7 +20,7 @@ var input2="";
 var input3=21;
 
 function BlankOrNot(a) {
-    if(typeof a==="string" && a === " ") {
+    if(typeof a==="string" && a === "") {
         return true;
     }
     else{
@@ -46,6 +46,8 @@ function stringx(a, b) {
 
 console.log(stringx(f,n));
 
+
+
 console.log()
 //task 4
 var a="My random string";
@@ -68,24 +70,8 @@ console.log(letterOcc(l, z));
 
 console.log();
 //task 5
-// var s="String sa Y je super ";
-// var m="Y";
-// var o="Z"
 
-// function charOcc(a, b) {
-//     var result=0;
-//     for(var i=0; i<a.length; i++) {
-//         if(a[i] === b) {
-//             result = a.indexOf(b);
-//         }
-//     }   
-//     return result
-// }
-
-// console.log(charOcc(s, m));
-// console.log(charOcc(s, o)); 
-
-var s="String sa Y je super ";
+var s="String sa Y je super Y Y";
 var m="Y";
 var o="Z"
 
@@ -94,7 +80,7 @@ function charOcc(a, b) {
     for(var i=0; i<a.length; i++) {
          result = a.indexOf(b);
     }   
-    return result
+    return result;
 }
 
 console.log(charOcc(s, m));
@@ -103,22 +89,6 @@ console.log(charOcc(s, o));
 
 console.log()
 //task 6
-// var p="Neki super Z string sa puno Z Z Z";
-// var t="Y";
-// var x="Z";
-
-// function lastOcc(a, b) {
-//     var result=0;
-//     for(var i=0; i<a.length; i++) {
-//         if(a[i] === b) {
-//             result = a.lastIndexOf(b)
-//         }
-//     }
-//     return result
-// }
-
-// console.log(lastOcc(p, t));
-// console.log(lastOcc(p, x));
 
 var p="Neki super Z string sa puno Z Z Z";
 var t="Y";
@@ -127,7 +97,7 @@ var x="Z";
 function lastOcc(a, b) {
     var result=0;
     for(var i=0; i<a.length; i++) {
-        result = a.lastIndexOf(b)
+        result = a.lastIndexOf(b);
     }
     return result
 }
@@ -193,6 +163,27 @@ console.log(primeOrNot(-5));
 console.log(primeOrNot(24));
 console.log(primeOrNot(9));
 
+//drugo resenje
+function isPrimeNumber(num) {
+
+    if (num === 1) {
+        return false;
+    } else if (num === 2) {
+        return true;
+    }
+   
+    for (var x = 2; x < num; x++) {
+        if (num % x === 0) {
+            return false;
+        }
+    }
+   
+    return true;
+ }
+ 
+ var isPrime = isPrimeNumber(37);
+ console.log(isPrime);
+
 console.log();
 //task 9
 
@@ -237,20 +228,20 @@ console.log(newString(x, y));
 
 console.log();
 //task 11
-var array1=["1", "21","tamara", undefined, "42", "1e+3", Infinity];
-var arrayResult=[];
+// var array1=["1", "21","tamara", undefined, "42", "1e+3", Infinity];
+// var arrayResult=[];
 
-function stringToNumbers(a) {
-    var b=[];
-    for(var i=0; i<a.length; i++) {
-        if (!isNaN(a[i])) {
-            b.push(+a[i]);
-        } 
-    }
-    return b;
-}
+// function stringToNumbers(a) {
+//     var b=[];
+//     for(var i=0; i<a.length; i++) {
+//         if (!isNaN(a[i])) {
+//             b.push(+a[i]);
+//         } 
+//     }
+//     return b;
+// }
 
-console.log(stringToNumbers(array1));
+// console.log(stringToNumbers(array1));
 
 
 console.log();
@@ -290,3 +281,36 @@ function yearsTillRetireWomen(currentYear, birthYear, retireWomen=60) {
 }
 
 console.log(yearsTillRetireWomen(z, x));
+
+console.log();
+//task 13
+var p=1;
+var f=2;
+var k=3;
+var l=4;
+
+function humanizeNumber(a) {
+    var result="";
+    var c="" + a;
+    var leng=c.length;
+    if(c[leng-1]==1 && c[leng-2]!=1) {
+        result+=c + "st"
+    } else if(c[leng-1]==2 && c[leng-2]!=1) {
+        result+=c + "nd"
+    } else if(c[leng-1]==3 && c[leng-2]!=1){
+        result+=c + "rd"
+    } else {
+        result+=c + "th"
+    }
+
+    return result;
+}
+
+console.log(humanizeNumber(2));
+console.log(humanizeNumber(11));
+console.log(humanizeNumber(7));
+console.log(humanizeNumber(31));
+console.log(humanizeNumber(65));
+console.log(humanizeNumber(1));
+console.log(humanizeNumber(1011));
+console.log(humanizeNumber(2002));

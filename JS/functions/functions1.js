@@ -16,7 +16,7 @@ function max(a, b) {
         } 
     }
 
-console.log(max(7, 13))
+console.log(max(7, 13));
 
 console.log()
 //task 2
@@ -42,6 +42,17 @@ function digit(a) {
 
 console.log(digit(236));
 
+//drugacije resenje bolje
+function checkDigitLength(a) {
+    return (a + '').length;
+}
+
+var digitLength = checkDigitLength(332);
+if (digitLength >= 3) {
+    console.log('The digit length is', digitLength);
+}
+
+
 console.log()
 //task 4
 function mean(a, b, c, d) {
@@ -51,17 +62,20 @@ function mean(a, b, c, d) {
 
 console.log(mean(50, 25, 15, 100));
 
-var l=50;
-var p=25;
-var t=15;
-var z=100;
+//bolje resenje
+function arithmeticMean() {
+    var args = arguments;
+    var result = 0;
 
-function arithMean(a, b, c, d) {
-    result=(a+b+c+d)/4;
-    return result;
+    for (var i = 0; i < args.length; i++) {
+        var value = args[i + ''];
+        result += value;
+    }
+
+    return result / args.length;
 }
 
-console.log(arithMean(l,p,t,z));
+console.log(arithmeticMean(3, 4, 5, 18, 22))
 
 
 console.log();
@@ -102,6 +116,32 @@ function printSquare(a, b) {
 
 printSquare(c, d);
 printSquare(c, 9);
+console.log(printSquare("+",8));
+
+function square(a) {
+    var result = '';
+    for (var i = 0; i < a; i++) {
+        for (var j = 0; j < a; j++) {
+            if (i == 0 || i == (a - 1)) {
+                result += '*'
+            } else {
+                if (j == 0 || j == (a - 1)) {
+                    result += '*'
+                } else {
+                    result += ' '
+                }
+            }
+
+        }
+
+        result += '\n';
+    }
+
+    console.log(result);
+}
+
+square(5);
+square(8);
 
 
 console.log();
@@ -110,7 +150,7 @@ console.log();
 var m=5;
 var g=3;
 var l=7;
-var p="\*"
+var p="\*";
 
 function printFullRow(a, b) {
     result="";
@@ -127,6 +167,7 @@ function draw(a, b, c, d) {
 }
 
 draw(m, g, l, p);
+draw(9, 5, 4, "+");
 
 
 
@@ -141,7 +182,7 @@ function digitNum(a) {
 }
 
 console.log("Number " + l + " has " + digitNum(l) + " digits.");
-
+console.log("Number " + 23 + " has " + digitNum(23) + " digits.");
 
 console.log();
 //task 8
@@ -156,10 +197,11 @@ function NumApp(a, e) {
             result++
         } 
     } 
-    return result
+    return result;
 } 
 
-console.log(NumApp(b, c))
+console.log(NumApp(b, c));
+console.log(NumApp([3, 6, 8, 4, 7, 3 , 3], 3));
 
 console.log();
 //task 9
@@ -169,28 +211,28 @@ function oddSum(a) {
     var result=0;
     for(var i=0; i<a.length; i++) {
         if(a[i]%2!=0) {
-            result+=a[i]
+            result+=a[i];
         }
     }
-    return result
+    return result;
 }
 
 console.log(oddSum(b));
 
 console.log()
 //task 10
-var b="TamarA"
+var b="TamarAlofraAthabsdk"
 var c="a"
 
 function Appa(a, b) {
     var result=0;
-    a = a.toLowerCase();//tamara
+    a = a.toLowerCase();
     for(var i=0; i<a.length; i++) {
         if(a[i]===b) {
             result++
         }
     }
-    return result
+    return result;
 }
 
 console.log(Appa(b, c));
