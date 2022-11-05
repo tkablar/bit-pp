@@ -1,0 +1,217 @@
+.navigation {
+    background-color: brown;
+    color: azure;
+    width: 960px;
+    height: 50px;
+    margin: auto;
+   
+}
+
+ul {
+    display: inline; 
+    float: right;
+    padding-right: 30px; 
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+ .prvi {   
+    position: relative;
+    height: 600px;
+
+} 
+
+.plavi {
+    background-image: linear-gradient(to right, rgb(55, 55, 194), rgb(58, 151, 218));
+    width: 480px;
+    height: 600px;
+    position: absolute;
+    left: 464px;
+    top: 5px;
+
+}
+
+.cssh1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 310px;
+}
+
+.cssimage {
+    width: 200px;
+    position: relative;
+    left: 250px;
+    top: 170px;
+}
+
+.narandzasti {
+    background-image: linear-gradient(to right, rgb(243, 137, 84), rgb(242, 80, 26));
+    width: 480px;
+    height: 600px;
+    position: absolute;
+    left: 944px;
+    top: 5px;
+
+}
+
+.htmlh1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+
+.cssimage {
+    width: 200px;
+    position: relative;
+    left: 250px;
+    top: 170px;
+}
+
+.htmlimage {
+    width: 200px;
+    position: relative;
+    left: 20px;
+    top: 175px;
+}
+
+div.drugi {
+    position: relative;
+    left: 458px;
+    height: 360px;
+    padding-top: 10px;
+
+}
+
+.prvaslika {
+    background-color: brown;
+    width: 300px;
+    height: 200px;
+    
+}
+
+.slikaipar {
+    width: 300px;
+    text-align: justify;
+    display: inline-block;
+    padding: 5px;
+
+}
+
+.drugaslika {
+    background-color: cadetblue;
+    width: 300px;
+    height: 200px;
+}
+
+.linkovi {
+    background-color: rgb(243, 175, 17);
+    color: rgb(54, 53, 53);
+    width: 250px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    position: absolute;
+    left: 715px;
+    top: 20px;
+
+}
+
+hr {
+    color: rgb(54, 53, 53);
+    width: 230px;
+    border: 1px solid;
+
+    
+}
+
+p {
+    padding-left: 10px;
+}
+
+div.treci {
+    position: relative;
+    left: 457px;
+    height: 350px;
+
+}
+
+.prvaslika-1 {
+    background-color: rgb(143, 91, 91);
+    width: 300px;
+    height: 200px;
+    
+}
+
+.slikaipar-1 {
+    width: 300px;
+    text-align: justify;
+    display: inline-block;
+    padding: 10px;
+}
+
+.drugaslika-1 {
+    background-color: rgb(32, 108, 110);
+    width: 300px;
+    height: 200px;
+}
+
+.trecaslika-1 {
+    background-color: aqua;
+    width: 300px;
+    height: 200px;
+}
+
+div.cetvrti {
+    position: relative;
+    left: 457px;
+    height: 350px;
+
+}
+
+.prvaslika-2 {
+    background-color: rgb(155, 191, 38);
+    width: 300px;
+    height: 200px;
+    
+}
+
+.slikaipar-2 {
+    width: 300px;
+    text-align: justify;
+    display: inline-block;
+    padding: 10px;
+}
+
+.drugaslika-2 {
+    background-color: rgb(79, 70, 204);
+    width: 300px;
+    height: 200px;
+}
+
+.trecaslika-2 {
+    background-color: rgb(144, 32, 105);
+    width: 300px;
+    height: 200px;
+}
+
+div.footer {
+    background-color:rgb(36, 58, 90);
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+
+p.bit {
+    margin: auto;
+    padding-left: 470px;
+    padding-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

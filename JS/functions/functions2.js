@@ -284,10 +284,6 @@ console.log(yearsTillRetireWomen(z, x));
 
 console.log();
 //task 13
-var p=1;
-var f=2;
-var k=3;
-var l=4;
 
 function humanizeNumber(a) {
     var result="";

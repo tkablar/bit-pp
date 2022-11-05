@@ -1,0 +1,67 @@
+.gray1 {
+    background-color: rgb(222, 222, 222);
+    width: 80%;
+    height: 200px;
+    padding: 10px;
+    margin: auto;
+}
+
+.yellow1 {
+    background-color: rgb(223, 175, 42);
+    width: 98.5%;
+    height: 50px;
+    padding: 10px;
+    
+}
+
+p {
+    padding: 15px;
+    margin: auto;
+}
+
+p.home {
+    display: inline-block;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p.home:hover {
+    background-color: blanchedalmond;
+}
+
+p.menuA {
+    display: inline-block;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p.menuA:hover {
+    background-color: blanchedalmond;
+}
+
+p.menuB {
+    display: inline-block;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p.menuB:hover {
+    background-color: blanchedalmond;
+}
+
+p.menuC {
+    display: inline-block;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p.menuC:hover {
+    background-color: blanchedalmond;
+    
+}
+
+ul.submenuA {
+    position: relative;
+    display: none;
+}
+

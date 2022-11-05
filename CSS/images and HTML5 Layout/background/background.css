@@ -1,0 +1,10 @@
+body {
+    /* background-image: url(./jpegsystems-home.jpg);
+    background-attachment: fixed; */
+
+    background-image: url(./220px-Phalaenopsis_JPEG.png);
+    /* background-repeat: no-repeat; */
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+}
