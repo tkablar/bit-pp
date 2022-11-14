@@ -221,7 +221,7 @@ console.log(oddSum(b));
 
 console.log()
 //task 10
-var b="TamarAlofraAthabsdk"
+var b="TamarA"
 var c="a"
 
 function Appa(a, b) {
