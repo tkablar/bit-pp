@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAMI,GAAQ;EACJ,SAAS,EAAE,IAAqB;;AADpC,GAAQ;EACJ,SAAS,EAAE,IAAqB;;AADpC,GAAQ;EACJ,SAAS,EAAE,IAAqB;;AADpC,GAAQ;EACJ,SAAS,EAAE,IAAqB",
+"sources": ["index.scss"],
+"names": [],
+"file": "index.css"
+}

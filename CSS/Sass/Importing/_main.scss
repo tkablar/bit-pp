@@ -1,0 +1,72 @@
+$primary-color: rgb(201, 94, 94);
+$secondary-color: rgb(92, 92, 147);
+$table-color1: rgb(155, 154, 154);
+$table-color2: lightgray;
+$text-color1: white;
+$text-color2:rgb(25, 23, 23);
+
+$width-one: 50%;
+$width-two: 100%;
+$width-three: 50%;
+$height-one: 25em;
+
+@mixin text-shadow($x: 5px, $y: 2px, $blur: 5px, $color-shadow: rgba(15, 7, 7, 0.4)) {
+    text-shadow: $x $y $blur $color-shadow;
+    
+}
+
+@mixin box-shadow($x: -11px, $y: 12px, $blur: 7px, $spread: 0px, $color: #129750) {
+    
+    -webkit-box-shadow: $x $y $blur $spread $color;
+    -moz-box-shadow: $x $y $blur $spread $color;
+    box-shadow: $x $y $blur $spread $color;
+}
+
+article.prvi {
+    width: $width-two;
+    display: flex;
+    color: $text-color1;
+    margin: 2em auto;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .prvi {
+        width: 30%;
+        height: 100px;
+        background-color: $primary-color;
+    }
+
+    .drugi {
+        width: 30%;
+        height: 90px;
+        background-color: $secondary-color;
+    }
+
+    p {
+        text-align: center;
+        line-height: 3.5em;
+        
+    }
+
+}
+
+article.drugi {
+    width: $width-one;
+    margin: 4em auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    .first {
+        width: 10em;
+        height: 10em;
+        background-color: $table-color1;
+
+    }
+
+    .second {
+        width: 40%;
+        height: 7em;
+        background-color: $table-color2;
+    }
+}
+

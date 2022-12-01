@@ -1,0 +1,10 @@
+$primary-color: #123456;
+$secondary-color: white;
+
+p {
+    width: 200px;
+    height: 200px;
+    background-color: $primary-color;
+    color: $secondary-color;
+    border-radius: 15px;
+}

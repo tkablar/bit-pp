@@ -7,6 +7,7 @@ console.log(sum(9, 2));
 
 console.log()
 //task 1
+//1. Write a program that calculates the maximum of two given numbers.
 function max(a, b) {
         if(a>b) {
             return a;
@@ -20,6 +21,7 @@ console.log(max(7, 13));
 
 console.log()
 //task 2
+//2. Write a program that checks if a given number is odd.
 function odd(a) {
     if(a%2==0) {
         return "even";
@@ -32,6 +34,7 @@ console.log(odd(54));
 
 console.log()
 //task 3
+//3. Write a program that checks if a given number is a three digit long number.
 function digit(a) {
     if(a>99) {
         return "yes";
@@ -55,6 +58,7 @@ if (digitLength >= 3) {
 
 console.log()
 //task 4
+//4. Write a program that calculates an arithmetic mean of four numbers.
 function mean(a, b, c, d) {
     result=(a+b+c+d)/4;
     return result;
@@ -80,6 +84,13 @@ console.log(arithmeticMean(3, 4, 5, 18, 22))
 
 console.log();
 //task 5
+//5. Write a program that draws a square of a given size. For example, if the size of
+// square is 5 the program should draw:
+// *****
+// * *
+// * *
+// * *
+// *****
 
 var c="\*";
 var d=5;
@@ -146,7 +157,11 @@ square(8);
 
 console.log();
 //task 6
-
+// 6. Write a program that draws a horizontal chart representing three given values.
+// For example, if values are 5, 3, and 7, the program should draw:
+// * * * * *
+// * * *
+// * * * * * * *
 var m=5;
 var g=3;
 var l=7;
@@ -173,7 +188,7 @@ draw(9, 5, 4, "+");
 
 console.log();
 //task 7
-
+//7. Write a program that calculates a number of digits of a given number.
 var l=235;
 
 function digitNum(a) {
@@ -186,6 +201,10 @@ console.log("Number " + 23 + " has " + digitNum(23) + " digits.");
 
 console.log();
 //task 8
+// 8. Write a program that calculates a number of appearances of a given number in a
+// given array.
+// Inputs: a = [2, 4, 7, 8, 7, 7, 1], e = 7
+// Result: 3
 var b=[2, 4, 7, 8, 7, 7, 1];
 var c=7;
 
@@ -205,6 +224,7 @@ console.log(NumApp([3, 6, 8, 4, 7, 3 , 3], 3));
 
 console.log();
 //task 9
+//9. Write a program that calculates the sum of odd elements of a given array.
 var b=[2, 4, 7, 8, 7, 7, 1];
 
 function oddSum(a) {
@@ -221,6 +241,9 @@ console.log(oddSum(b));
 
 console.log()
 //task 10
+// 10. Write a program that calculates the number of appearances of a letter a in a
+// given string. Modify the program so it calculates the number of both letters a and
+// A.
 var b="TamarA"
 var c="a"
 
@@ -239,6 +262,9 @@ console.log(Appa(b, c));
 
 console.log();
 //task 11
+// 11. Write a program that concatenates a given string given number of times. For
+// example, if “abc” and 4 are given values, the program prints out abcabcabcabc.
+
 var a="abc";
 var b=4;
 

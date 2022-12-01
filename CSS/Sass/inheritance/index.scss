@@ -1,0 +1,28 @@
+$width-one: 32em;
+$width-two: 20em;
+
+
+p {
+    border: 3px solid #158963;
+    padding: 1em;
+    color: #303533;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.first {
+    @extend p;
+    border-color: #da2727;
+    width: $width-one / 2;
+}
+
+.second {
+    @extend p;
+    border-color: #3e39d0;
+    width: $width-two + 5em;
+}
+
+.third {
+    @extend p;
+    width: $width-one - $width-two/2;
+}

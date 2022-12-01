@@ -1,0 +1,131 @@
+$primary-color: rgb(201, 94, 94);
+$secondary-color: rgb(92, 92, 147);
+$table-color1: rgb(155, 154, 154);
+$table-color2: lightgray;
+$text-color1: white;
+$text-color2:rgb(25, 23, 23);
+
+$width-one: 80%;
+$width-two: 100%;
+$width-three: 50%;
+$height-one: 25em;
+
+@mixin text-shadow($x: 5px, $y: 2px, $blur: 5px, $color-shadow: rgba(15, 7, 7, 0.4)) {
+    text-shadow: $x $y $blur $color-shadow;
+    
+}
+
+@mixin box-shadow($x: -11px, $y: 12px, $blur: 7px, $spread: 0px, $color: #129750) {
+    // box-shadow: $x, $y, $blur, $color-box-shadow;
+    -webkit-box-shadow: $x $y $blur $spread $color;
+    -moz-box-shadow: $x $y $blur $spread $color;
+    box-shadow: $x $y $blur $spread $color;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: $text-color2;
+    
+}
+
+.container {
+    width: $width-one;
+    margin: 20px auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background: $secondary-color;
+    
+
+    h1 {
+        padding: 20px 0;
+        text-align: center;
+        background: $primary-color;
+        color: white;
+    }
+    
+    h2 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-bottom: 0px;
+        padding-left: 10px;
+        text-align: left;
+        background: $primary-color;
+        color: white;
+    }
+    
+    .title {
+        background-color: $primary-color;
+        @include text-shadow(7px, 2px, 5px, rgb(36, 202, 94))
+    
+    }
+    
+    
+    
+    img {
+        width: $width-two;
+        height: $height-one;
+        margin: 40px auto 40px;
+        display: block;
+    }
+    
+    table {
+        width: $width-two;
+        color: rgb(0, 0, 0);
+        background: $table-color1;
+        border-collapse: collapse;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    tr {
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+    
+    td {
+        padding: 5px 0;
+    }
+    
+    .even {
+        background-color: $table-color2;
+    }
+}
+
+
+td:first-child {
+    width: $width-three;
+    padding-left: 10px;
+    
+}
+
+p#footer {
+    margin-top: 100px;
+    color: $text-color1;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    
+}
+
+td {
+    padding: 15px;
+}
+
+tr {
+    padding: 50px;
+}
+
+footer {
+    width: $width-one;
+    height: $height-one/2;
+    background-color: $primary-color;
+    @include box-shadow
+}
+
+.lorem {
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    @include box-shadow
+}

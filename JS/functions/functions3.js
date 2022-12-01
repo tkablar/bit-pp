@@ -1,8 +1,8 @@
 //task 1
+// 1. Write a program to insert a string within a string at a particular position (default is 1, beginning of a string).
 var l="My random string";
 var t="JS ";
 var o=1;
-
 
 function insertToString(a, b, c) {
     var result="";
@@ -19,8 +19,10 @@ console.log(insertToString(l, t, o));
 console.log(insertToString(l, t, 10));
 console.log(insertToString(l, t, 4));
 
+
 console.log();
 //task 2
+//2. Write a program to join all elements of the array into a string skipping elements that are undefined, null, NaN or Infinity.
 var t=["NaN", 0, 15, false, -22, "", undefined, 47, null];
 
 function joinElements(a) {
@@ -40,6 +42,7 @@ console.log(joinElements(t));
 
 console.log();
 //task 3
+//Write a program to filter out falsy values from the array.
 var o=[NaN, 0, 15, false, -22, "", undefined, 47, null];
 
 
@@ -57,6 +60,7 @@ console.log(filterOut(o));
 
 console.log();
 //task 4
+//Write a function that reverses a number. The result must be a number.
 var o=12345;
 var t=98765;
 
@@ -86,6 +90,7 @@ function reverseNumber(num) {
 
  console.log();
  //task 5
+ //Write a function to get the last element of an array. Passing a parameter &#39;n&#39; will return the last &#39;n&#39; elements of the array.
  var z=[7, 9, 0, -2];
 
  function lastElementOfArray(a, b) {
@@ -102,8 +107,8 @@ function reverseNumber(num) {
 
  console.log();
  //task 6
-
-function specifiedNum(a, b = null) {
+//Write a function to create a specified number of elements with pre-filled numeric value array.
+ function specifiedNum(a, b = null) {
     var result=[];
 
     for(var i=0; i<a; i++) {
@@ -176,17 +181,18 @@ console.log(wordWithinString(p, l));
 
 console.log();
 //task 9
+//Write a function to hide email address.
 var e="myemailaddress@bgit.rs";
 
 function hideEmail(a) {
     var result="";
-    var hide=""
+    var hide=0;
     for(var i=0; i<a.length; i++) {
         if(i<2) {
             result+=a[i];
         } else if(i==3) {
            result+="..."; 
-        }  else if(a[i]=="@") {
+        }  else if(a[i]==="@") {
             hide=i;
             result+=a[i]; 
         } else if(i>3) {
@@ -204,6 +210,8 @@ console.log(hideEmail(e));
 
 console.log()
 //task 10
+//10. Write a program to find the most frequent item of an array.
+
 function findFrequentItem(inputArr) {
     var mostFrequent = 1;
     var m = 0;

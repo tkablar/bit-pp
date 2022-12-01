@@ -1,0 +1,26 @@
+@import "./main";
+
+header {
+    width: $width-two;
+    height: $height-one;
+    background-color: $primary-color;
+
+    .prvi {
+        width: $width-one;
+        height: 2em;
+        background-color: $secondary-color;
+    }
+
+    .drugi {
+        width: 100px;
+        height: 100px;
+        background-color: $table-color2;
+    }
+
+    h1 {
+        color: $text-color1;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid 5px;
+        border-color: beige;
+    }
+}

@@ -1,0 +1,10 @@
+$primary-color: #123456;
+$secondary-color: rgb(209, 195, 195);
+
+p {
+    width: 200px;
+    height: 200px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border-radius: 5px;
+}

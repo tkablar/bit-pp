@@ -1,0 +1,59 @@
+.prvi {
+    background-color: rgb(233, 194, 130);
+    padding: 5px;
+    width: 700px;
+    height: 300px;
+    align-self: flex-end;
+    order: 4;
+        
+}
+
+.drugi {
+    background-color: rgb(240, 162, 114);
+    padding: 5px;
+    width: 700px;
+    height: 300px;
+    align-self: flex-end;
+    order: 3;
+}
+
+.treci {
+    background-color: rgb(51, 40, 40);
+    padding: 5px;
+    width: 700px;
+    height: 300px;
+    align-self: flex-end;
+    order: 2;
+}
+
+.cetvrti {
+    background-color: rgb(136, 115, 115);
+    padding: 5px;
+    justify-content: flex-start;
+    width: 1200px;
+    
+}
+
+p {
+    color: white;
+    font-size: 32px;
+    padding-left: 20px;
+    text-align: center;
+    line-height: 250px;
+}
+
+p.four {
+    line-height: 800px;
+}
+
+.parent {
+    display: flex;
+    height: 1000px;
+    /* flex-direction: column-reverse; */
+    flex-flow: column wrap;
+    /* align-content:stretch; */
+     
+}
+
+
+
