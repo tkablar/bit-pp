@@ -6,5 +6,35 @@ $paragraph: 16px;
 @for $i from 1 through 4 {
     .p#{$i} {
         font-size: calculateFontSize($i);
+        
     }
 }
+
+// $input: 1;
+
+@mixin paragraph-color($i) {
+
+    @for $i from 1 through 4 {
+
+        .p#{$i} {
+
+            @if $i==1 {
+                background-color: blue;
+            }
+            @else if $i==2 {
+                background-color: red;
+            }
+            @else if $i==3 {
+                background-color:purple;
+            }
+            @else if $i==4 {
+                background-color:green;
+            }
+        }
+
+    }
+}
+
+
+@include paragraph-color(1)
+
