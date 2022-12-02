@@ -46,7 +46,7 @@ console.log(index)
 
 console.log()
 //task4
-minimum2=array[0]
+var minimum2 = array[0]
 for(i=1; i<array.length; i++) {
     if(array[i] < minimum2 && array[i] !== minimum) {
         minimum2=array[i]
@@ -137,12 +137,12 @@ var p=3
 var a=[2, -2, 33, 12, 5, 8];
 var newN=[];
 
-    if(p>a.length) {
+    if(p > a.length) {
         console.log("Erorr")
     } else {
         
-        for(i=0; i<a.length; i++) {
-            if(i===p) {
+        for(i = 0; i < a.length; i++) {
+            if(i === p) {
                 newN.push(e)
             }
             newN.push(a[i]);

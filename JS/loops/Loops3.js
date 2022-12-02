@@ -3,8 +3,8 @@
 var a=1;
 var sum=0;
 
-for(a=1; a<= 10; a++) {
-    sum+=a;
+for(a = 1; a <= 10; a++) {
+    sum += a;
 }
 console.log("Sum of natural numbers: ", sum);
 
@@ -14,7 +14,7 @@ var a=1;
 var cube=a*a*a;
 result=""
 
-for(i=1; i<=10; i++) {
+for(i = 1; i <= 10; i++) {
     cube=i*i*i
     console.log(i + " up to cube equals " + cube);
 } 
@@ -24,8 +24,8 @@ for(i=1; i<=10; i++) {
 console.log()
 //task 3
 var a=6;
-var fact=1
-for(i=1; i<=a; i++) {
+var fact=1;
+for(i = 1; i <= a; i++) {
     fact*=i;
 }
 console.log("The factorial of "+ a + " is " + fact);
@@ -41,9 +41,9 @@ console.log("Task 4")
 var input=5;
 var even=[];
 var sum=0;
-for(i=1; i<=input; i++) {
+for(i = 1; i <= input; i++) {
     even.push(i*2);
-    sum+=i*2;
+    sum += i*2;
 }
 console.log("The even numbers are: " + even);
 console.log("The sum of even numbers is: " + sum);
@@ -90,8 +90,8 @@ console.log("Task 7")
 
 var array=[1, 3, 32, "$" , "g", "h", "t", "s", "c", 66, 23, "h2"];
 
-for(i=0; i<array.length; i++) {
-    if(array[i]==="c") {
+for(i = 0; i < array.length; i++) {
+    if(array[i] === "c") {
         console.log("The index of the letter \'c\' is: " + i);
     }
 }

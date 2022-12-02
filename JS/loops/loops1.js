@@ -34,7 +34,7 @@ for(i=0 ; i < array.length; i+=1) {
     sum+=array[i];
     product*=array[i];
 }
-console.log("sum: "+ sum + " product: " +product);
+console.log("sum: "+ sum + " product: " + product);
 
 console.log()
 //task 4 ***
@@ -48,8 +48,8 @@ console.log(result);
 console.log()
 //task 5
 var a=[
-    [1,2,1,24,],
-    [8, 11, 9, 4,],
+    [1, 2, 1, 24],
+    [8, 11, 9, 4],
     [7, 0, 7, 27]
 ];
 result="";
