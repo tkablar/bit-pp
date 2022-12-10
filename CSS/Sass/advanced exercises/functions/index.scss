@@ -1,0 +1,27 @@
+$content-box-width: 400px;
+$border-box-width: 105px;
+
+@function width-size($n) {
+    @return $n;
+}
+
+.p1 {
+    width: width-size($content-box-width);
+}
+
+.p2 {
+    width: width-size($border-box-width);
+}
+
+
+//table function
+
+$table-width: 900px;
+
+@function cell-width($n) {
+    @return $n / 6;
+}
+
+th {
+    width: cell-width($table-width);
+}

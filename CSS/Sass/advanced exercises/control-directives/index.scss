@@ -3,12 +3,12 @@ $paragraph: 16px;
     @return $paragraph + 2*($i - 1);
 }
 
-@for $i from 1 through 4 {
-    .p#{$i} {
-        font-size: calculateFontSize($i);
+// @for $i from 1 through 4 {
+//     .p#{$i} {
+//         font-size: calculateFontSize($i);
         
-    }
-}
+//     }
+// }
 
 // $input: 1;
 
@@ -17,6 +17,8 @@ $paragraph: 16px;
     @for $i from 1 through 4 {
 
         .p#{$i} {
+
+            font-size: calculateFontSize($i);
 
             @if $i==1 {
                 background-color: blue;
@@ -31,6 +33,7 @@ $paragraph: 16px;
                 background-color:green;
             }
         }
+
 
     }
 }

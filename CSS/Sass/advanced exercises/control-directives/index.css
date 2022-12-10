@@ -1,25 +1,17 @@
 .p1 {
-  font-size: 16px; }
-
-.p2 {
-  font-size: 18px; }
-
-.p3 {
-  font-size: 20px; }
-
-.p4 {
-  font-size: 22px; }
-
-.p1 {
+  font-size: 16px;
   background-color: blue; }
 
 .p2 {
+  font-size: 18px;
   background-color: red; }
 
 .p3 {
+  font-size: 20px;
   background-color: purple; }
 
 .p4 {
+  font-size: 22px;
   background-color: green; }
 
 /*# sourceMappingURL=index.css.map */
