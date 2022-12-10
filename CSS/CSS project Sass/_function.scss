@@ -1,0 +1,17 @@
+$font-sizes: (
+    "three": 3rem,
+    "two": 2rem,
+    "onenine": 1.9rem,
+    "oneseven": 1.7rem,
+    "onefive": 1.5rem,
+    "onefour": 1.4rem,
+    "one": 1rem,
+    "zeronine": 0.9rem,
+    "zeroeight": 0.8rem,
+    "zeroseven": 0.7rem,
+    "zerosix": 0.6rem
+);
+
+@function sizes($font-size) {
+    @return map-get($font-sizes, $font-size)
+}

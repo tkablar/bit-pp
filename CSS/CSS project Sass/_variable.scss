@@ -1,0 +1,78 @@
+//color variable
+$logo-gray: #787878;
+$logo-orange: #fa8d2e;
+$white: #ffffff;
+$button-blue: #146eb4;
+$button-hover: #619cc9;
+$text-black: #111;
+$text-blue: #49A1E2;
+$text-gray: #6E6E6E;
+
+$box-green: #2CDD98;
+$box-pink: #FF4F81;
+$box-blue: #3369E6;
+$box-lightblue: #7FC2F7;
+$button-orange: #FF9801;
+$button-o-hover: #df851d;
+$footer-color: #212121;
+
+//width variable
+$full-width: 100%;
+$width-ninty: 90%;
+$width-eightyfive: 85%;
+$width-eighty: 80%;
+$width-seventy: 70%;
+$width-sixty: 60%;
+$width-fifty: 50%;
+$width-fourtyfive: 45%;
+$width-fourty: 40%;
+$width-thirtyfive: 35%;
+$width-thirtytwo: 32%;
+$width-thirty: 30%;
+$width-twentyfive: 25%;
+$width-twenty: 20%;
+$width-fifteen: 15%;
+$width-ten: 10%;
+
+//height variable
+$height-twenty: 20em;
+$height-fifteen: 15em;
+$height-fourteen: 14em;
+$height-ten: 10em;
+$height-eight: 8em;
+$height-six: 6em;
+
+//font sizes
+$font-three: 3rem;
+$font-logo: 2rem;
+$font-onepointnine: 1.9rem;
+$font-onepointseven: 1.7rem;
+$font-onepointfive: 1.5rem;
+$font-onepointfour: 1.4rem;
+$font-one: 1rem;
+$font-zeronine: 0.9rem;
+$font-zeroeight: 0.8rem;
+$font-zeroseven: 0.7rem;
+$font-zerosix: 0.6rem; 
+
+//devices
+$mobile: "(min-width: 300px) and (max-width: 576px)";
+$tablet: "(min-width: 577px) and (max-width: 1023px)";
+$desktop: "(min-width: 1281px)";
+
+
+//function font-sizes
+
+// @function pxToRem($pxSize) {
+//     @return $pxSize / 16 + rem;
+//   }
+// @mixin font-size() {
+//     @for $size from 12 through 64 {
+//     .font-#{$size} {
+//     font-size: pxToRem($size);
+//     }
+//     }
+// }
+  
+//   @include font-size();
+
