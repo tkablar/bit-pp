@@ -15,35 +15,39 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo">
+    <header id="home">
+        <div class="logo" >
             <p class="logo"><span> BUILD</span> ESTATE</p>
         </div>
 
         <nav>
 
             <ul class="nav">
-                <li class="nav">HOME</li>
-                <li class="nav">ABOUT</li>
-                <li class="nav">SERVICES</li>
-                <li class="nav">CONTACT US</li>
+                <li class="nav"><a href="#">HOME</a></li>
+                <li class="nav"><a href="#about">ABOUT</a></li>
+                <li class="nav"><a href="#">SERVICES</a></li>
+                <li class="nav"><a href="#contactform">CONTACT US</a></li>
             </ul>
 
         </nav>
 
-    </header>
-
-    <main>
         <article class="first">
 
             <div class="articlefirst">
-                <h1 class="first">WE SHAPE OUR BUILDINGS THEREAFTER THEY SHAPE US</h1>
-                <button class="first">Read More</button>
+                <!-- <h1 class="first">WE SHAPE OUR BUILDINGS THEREAFTER THEY SHAPE US</h1>
+                <button class="first">Read More</button> -->
             </div>
+
+            <h1 class="first">WE SHAPE OUR BUILDINGS THEREAFTER THEY SHAPE US</h1>
+            <button class="first">Read More</button>
 
         </article>
 
-        <h1 class="about">Who We Are</h1>
+    </header>
+
+    <main>
+
+        <h1 class="about" id="about">Who We Are</h1>
 
         <div class="rhomb">
             <div class="line"></div>
@@ -51,7 +55,7 @@
             <div class="line"></div>
         </div>
 
-        <article class="about">
+        <article class="about" >
             
 
             <div class="section">
@@ -82,14 +86,14 @@
 
         </article>
 
-        <h1 class="users">What People Say</h1>
+        <h1 class="users" id="users">What People Say</h1>
         <div class="rhomb" id="second">
             <div class="line"></div>
             <div class="square"></div>
             <div class="line"></div>
         </div>
 
-        <article class="users">
+        <article class="users" >
 
             <div class="user">
                 <div class="userimage">
@@ -200,7 +204,7 @@
             <div class="line"></div>
         </div>
 
-        <article class="contactform">
+        <article class="contactform" id="contactform">
 
             <div class="contactform">
                 <div class="firstthree">
@@ -228,12 +232,12 @@
     
     <footer>
         <ul class="footer">
-            <li class="footer">Home</li>
-            <li class="footer">About</li>
-            <li class="footer">Services</li>
-            <li class="footer">Stats</li>
-            <li class="footer">Agents</li>
-            <li class="footer">Testimonials</li>
+            <li class="footer"><a href="#home">Home</a></li>
+            <li class="footer"><a href="#about">About</a></li>
+            <li class="footer"><a href="#">Services</a></li>
+            <li class="footer"><a href="#">Stats</a></li>
+            <li class="footer"><a href="#">Agents</a></li>
+            <li class="footer"><a href="#users">Testimonials</a> </li>
         </ul>
         <p class="footer">&#169 2017 Build Estate. All Rights Reserved.</p>
     </footer>
