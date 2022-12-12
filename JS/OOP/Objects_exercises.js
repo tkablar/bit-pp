@@ -90,18 +90,25 @@ function mapLetters(a) {
 
     for(var i = 0; i < a.length; i++) {
         letter = a[i];
-        temp = letter;
-        console.log(letter);
-        index = i;
-        console.log(index);
+        
+        if (result[a[i]] === undefined) {
+            result[a[i]] = [];
+        }
+        // console.log(result[a[i]])
+        result[a[i]].push(i);
+        // temp = letter;
+        // console.log(letter);
+        // index = i;
+        // console.log(index);
             
     }
     return result;
 }
 
-    
-
 console.log(mapLetters("dodo"));
+
+console.log(mapLetters("froggy"));
+console.log(mapLetters("grapes"));
 
 
 //task 4
@@ -149,14 +156,15 @@ console.log(whoCursedTheMost([first, second, third]));
 
 console.log(whoCursedTheMost([{me: 80, spouse: 5}, {me: 23, spouse: 15}, {me: 6, spouse: 15}]));
 
-console.log(whoCursedTheMost([{me: 10, spouse: 5}, {me: 5, spouse: 10}, {me: 0, spouse: 10}]));
+console.log(whoCursedTheMost([{me: 10, spouse: 5}, {me: 5, spouse: 10}, {me: 0, spouse: 0}]));
 
 //task 5
+
 // Create a function that converts color in RGB format to Hex format.
 // Examples:
 // rgbToHex({red: 0, green: 128, blue: 192}) ➞ "#0080c0";
 
-var blue = {
+var rgb = {
     r: 67,
     g: 84,
     b: 90
@@ -180,5 +188,126 @@ function RGBToHex(a) {
     return "#" + r + g + b;
 }
 
-console.log(RGBToHex(blue))
-console.log(RGBToHex({r: 0, g: 128, b: 192}))
+console.log(RGBToHex(rgb));
+console.log(RGBToHex({r: 0, g: 128, b: 192}));
+
+//task 6
+
+// Create a function that takes an amount of monetary change (e.g. 47 cents) and breaks
+// down the most efficient way that change can be made using USD quarters, dimes,
+// nickels and pennies. Your function should return an object.
+
+function makeChange(a) {
+    var quarter = 25;
+    var dime = 10;
+    var nickel = 5;
+    var penny = 1;
+    var result = {};
+    var temp = 0;
+
+
+    temp = parseInt(a / quarter);
+    result.q = temp;
+    a -= quarter * temp;
+    temp = parseInt(a / dime)
+    result.d = temp;
+    a -= dime * temp;
+    temp = parseInt(a / nickel)
+    result.n = temp;
+    a -= nickel * temp;
+    temp = parseInt(a / penny)
+    result.p = temp;
+    
+
+    return result;
+}
+
+console.log(makeChange(47))
+console.log(makeChange(24))
+console.log(makeChange(92))
+
+
+//task 7
+
+// Create a function that takes an array of objects like { name: "John", notes: [3, 5, 4]} and returns an array of objects like { name: "John", avgNote: 4 }. If student has no notes (an empty array) then let's assume avgNote: 0.
+// Examples:
+// [
+// { name: &quot;John&quot;, notes: [3, 5, 4]}
+// ]
+// ➞
+// [
+// { name: &quot;John&quot;, avgNote: 4 }
+// ]
+
+var studentGrades = [{name: "John", notes: [3, 5, 4]}];
+
+function returnObject(a) {
+    var result = {name: "", avgNotes: 0};
+    var temp = 0;
+    var sum = 0;
+
+    result.name = a.name;
+
+    if(a["notes"].length > 0) {
+        
+        for(var i = 0; i < a["notes"].length; i++) {
+            sum += a["notes"][i];
+        }
+
+        result["avgNotes"] = sum / a["notes"].length;
+    }
+
+    return result;
+}
+
+console.log(returnObject({name: "John", notes: [3, 5, 4]}))
+
+function createArrayOfObjects(a) {
+    var result = [];
+
+    for(var i = 0; i < a.length; i++) {
+        result.push(returnObject(a[i]));
+    }
+
+    return result;
+}
+
+console.log(createArrayOfObjects([{name: "John", notes: [3, 5, 4]}, {name: "Mickey", notes: [5, 3]}]))
+
+
+//task 8
+
+// Given an object with students and the grades that they made on the tests that they took, determine which student has the best Test Average. The key will be the student's name and the value will be an array of their grades. You will only have to return the student's name. You do not need to return their Test Average.
+// getBestStudent([{ name: ‘John’, grades: [100, 90, 80]}, {name: ‘Bob’, grades: [100, 70,
+// 80]}…]) ➞ "John" //John's avg = 90 // Bob's avg = 83.33
+
+
+var grades = [{name: "John", grades: [100, 90, 80]}, {name: "Bob", grades: [100, 70, 80]}];
+
+function getBestStudent(a) {
+    var result = {};
+    var avg = 0;
+    var max = 0;
+
+    for(var i = 0; i < a.length; i++) {
+        var sum = 0;
+        for(var j = 0; j < a[i].grades.length; j++) {
+            sum += a[i].grades[j];
+            
+        }
+        avg = sum / a[i].grades.length;
+
+        if(avg > max) {
+            max = avg;
+            result = a[i];
+        
+        }
+    }
+
+    return result.name;
+
+}
+
+console.log(getBestStudent(grades));
+
+console.log(getBestStudent([{name: "Bob", grades: [100, 70, 80]}, {name: "John", grades: [100, 90, 80]}, {name: "Mickey", grades: [100, 98, 90]}]));
