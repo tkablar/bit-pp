@@ -1,0 +1,76 @@
+//color variable
+$white: #ffffff;
+
+$red-header: #c1392b;
+
+$blue-dark: #1a94d5;
+$blue-light: #35b8f0;
+
+$orange-dark: #ed5e26;
+$orange-light: #f78c38;
+
+$yelllow: #ffbe00;
+$blue: #2d3e50;
+$green: #27ae61;
+
+
+
+#header {
+    background-color: $red-header;
+    height: 2.5em;
+}
+
+h1 {
+    color: $white;
+}
+
+#css {
+    background: linear-gradient(to right, $blue-dark, $blue-light);
+}
+
+img {
+    vertical-align: middle;
+}
+
+#html {
+    background: linear-gradient(to left, $orange-dark, $orange-light);
+}
+
+ul {
+    list-style-type: none;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+#aside{
+    background-color: $yelllow;
+    
+}
+
+#red {
+    background-color: $red-header;
+    height: 200px;
+}
+
+#blue {
+    background-color: $blue;
+    height: 200px;
+}
+
+#green {
+    background-color: $green;
+    height: 200px;
+}
+
+#yellow {
+    background-color: $yelllow;
+    height: 200px;
+}
+
+#footer {
+    background-color: $blue;
+}
+
