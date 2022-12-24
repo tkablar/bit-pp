@@ -344,31 +344,144 @@ console.log(val);
 // Input: 25 February
 // Output: 5 days
 
-var birthDay = 21;
-var birthMonth = 6;
-
-function DaysUntilBirthday(a, b) {
-
-    var myBirthdayThisYear = new Date(new Date().getFullYear(), a - 1, b).setHours(23, 59, 59)
-   
-    var addToYear = myBirthdayThisYear > Date.now() ? 0 : 1;
-
+function daysUntilMyBirthday(input) {
+    var today = new Date("February 20, 2023 01:01:00");
     var oneDay = 24*60*60*1000;
 
-    var secondDate = new Date(new Date().getFullYear()+ addToYear, b, a);
+    var a = new Date(input);
+    var birthday = a;
 
-    var firstDate = new Date();
-    var days = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())) / (oneDay));
+    var days = Math.round(Math.abs((today - birthday)) / (oneDay));
 
-    var daysOrDay = days === 1 ? "day" : "days";
-    return days !== 365 ? `${days} ${daysOrDay} until my birthday!`: `today is my birthday`;
-
+    return days + " days until my birthday!";
 };
 
-console.log(DaysUntilBirthday(6, 21));
+console.log(daysUntilMyBirthday("February 25, 2023"));
 
+function daysUntilBirthday(input) {
+    var today = new Date();
+    console.log(today);
 
-function daysUntilMyBirthday() {
-    var today = setDate()
     var oneDay = 24*60*60*1000;
+
+    var a = new Date(input);
+    var birthday = a;
+
+    var days = Math.round(Math.abs((today - birthday)) / (oneDay));
+
+    return days + " days until my birthday!";
 }
+
+console.log(daysUntilBirthday("June 21 2023"));
+
+// task 9
+// 9. Write a function that for a given departure and arrival time calculates the time the trip takes.
+// Input: 8:22:13 11:43:22
+// Output: 3 hours 21 minutes 9 seconds
+
+function calculateTripTime(input1 = {hours, minutes, seconds }, input2 = {hours, minutes, seconds }) {
+    var result = {};
+
+    result.hours = input2.hours - input1.hours;
+    result.minutes = input2.minutes - input1.minutes;
+    result.seconds = input2.seconds - input1.seconds;
+
+    return result;
+
+}
+
+console.log(calculateTripTime({hours: 8, minutes: 22, seconds: 13}, {hours: 11, minutes: 43, seconds: 22}))
+
+
+function calculateTripDuration(startT, endT) {
+    var ar = startT.split(":");
+    var ar2 = endT.split(":");
+  
+    console.log(ar, ar2);
+  
+    var start = new Date(0, 0, 0, ar[0], ar[1], ar[2]);
+    var end = new Date(0, 0, 0, ar2[0], ar2[1], ar2[2]);
+  
+    console.log(start, end);
+  
+    var diff = end.getTime() - start.getTime();
+  
+    var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    console.log(hours);
+    var min = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    var sec = Math.floor((diff % (1000 * 60)) / 1000);
+  
+    return hours + " hours " + min + " minutes " + sec + " seconds ";
+  }
+  
+  console.log(calculateTripDuration("8:22:13", "11:43:22"));
+
+//task 10
+// a. Write a constructor function that creates points in space. Each point in space has
+// its own x, y, and z coordinate. For example, (3, 5, 1) can be a point in space.
+
+// b. Write a function that calculates the distance between two points in the space.
+
+function createPoint(x, y, z) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
+}
+
+var point1 = new createPoint(3, 5, 1);
+var point2 = new createPoint(1, 2, 3);
+
+//b.
+
+function distanceBetweenPoints(point1, point2) {
+    var xDifference = point1.x - point2.x;
+    var yDifference = point1.y - point2.y;
+    var zDifference = point1.z - point2.z;
+
+    return Math.sqrt(xDifference*xDifference + yDifference*yDifference + zDifference * zDifference);
+}
+
+var distance = distanceBetweenPoints(point1, point2);
+console.log(distance);
+
+//task 11
+
+// a. Write a function that generates a random integer value between 5 and 20.
+// b. Write a function that generates a random integer value between 50 and 100.
+// c. Write a function which expects a number and a callback generator function and returns an array of numbers produced by the generator function.
+
+//a.
+//b.
+function generateRandomNumber(input1, input2) {
+    
+    return Math.floor(Math.random() * (input2 - input1 + 1) + input1);
+}
+  
+  console.log(generateRandomNumber(5, 20));
+  console.log(generateRandomNumber(50, 100));
+
+  //c.
+  function arrayOfNumbers(a, b) {
+    var result = [];
+    for(var i = 0; i < a; i++) {
+        result[i] = b(a, a*a);
+    }
+    return result;
+  }
+  console.log(arrayOfNumbers(50, generateRandomNumber));
+  console.log(arrayOfNumbers(5, generateRandomNumber ));
+
+//task 12.
+//Write a function that shuffles the elements of a given array.
+// Input: [3, 6, 11, 2, 9, 1]
+// Output: [6, 2, 9, 1, 3, 11] (it can be any random permutation of the given array)
+
+function shuffleElements(a) {
+    var result = [];
+
+
+    return result;
+}
+
+console.log(shuffleElements([3, 6, 11, 2, 9, 1]));
+
