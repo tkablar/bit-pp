@@ -49,12 +49,13 @@ function multiplyByTwoModified(a, b) {
     var result = [];
     for(var i = 0; i < a.length; i++) {
         
-        // result.push(a[i]*b)
-        result.push(addOne(a[i]*b))
+        let addedOne = b(a[i]);
+        let doubled = addedOne * 2;
+        result.push(doubled);
         
     }
 
     return result
 }
 
-console.log(multiplyByTwoModified([10, 20, 30], 2))
+console.log(multiplyByTwoModified([10, 20, 30], addOne))
