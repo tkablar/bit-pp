@@ -7,11 +7,11 @@ function duplicateElements(a = []) {
     var result = [];
     var tmp = 0;
 
-    if( !a || a.length == 0) {
+    if (!a || a.length == 0) {
         return null;
     }
 
-    for(var i = 0; i < a.length; i++) {
+    for (var i = 0; i < a.length; i++) {
         tmp = a[i];
         result.push(a[i], tmp);
 
@@ -30,11 +30,11 @@ console.log(duplicateElements([2, 4, 7, 11, -2, 1]));
 function removeDuplicates(a = []) {
     var result = [];
 
-    if(!a || a.length == 0) {
+    if (!a || a.length == 0) {
         return null;
     }
 
-    
+
     return a.filter((item, index) => a.indexOf(item) === index).sort();
 
 }
@@ -50,12 +50,12 @@ console.log(removeDuplicates(x))
 // Input: [1, 2, 9, 2, 1]
 // Output: true
 
-function oddNumberOfElements(a=[]) {
-    if(!a || a.length == 0) {
+function oddNumberOfElements(a = []) {
+    if (!a || a.length == 0) {
         return null;
     }
 
-    if(a.length % 2 == 0) {
+    if (a.length % 2 == 0) {
         return false
     }
 
@@ -74,15 +74,15 @@ console.log(oddNumberOfElements([0, 1, 2, 3, 10, 11, 25, 6]))
 // Output: 4
 
 function lessThanMiddle(a = []) {
-    if(a.length % 2 == 0) {
+    if (a.length % 2 == 0) {
         return "Error: even number of elements!"
     }
 
     var middle = a[parseInt(a.length / 2)];
     var count = 0;
 
-    for(var i = 0; i<a.length; i++) {
-        if(middle > a[i]) {
+    for (var i = 0; i < a.length; i++) {
+        if (middle > a[i]) {
             count++
         }
     }
@@ -105,8 +105,8 @@ function smallestElementAndPosition(a = []) {
     var minLastIndex = 0;
     var result = {};
 
-    for(var i = 0; i < a.length; i++) {
-        if(a[i] < minValue) {
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] < minValue) {
             minValue = a[i];
             result.minValue = a[i];
             result.minLastIndex = a.lastIndexOf(minValue)
@@ -129,8 +129,8 @@ console.log(smallestElementAndPosition([1, 4, -2, 11, 8, 1, -2, 3]));
 function lessThanGivenElement(a = [], b) {
     var result = [];
 
-    for(var i = 0; i<a.length; i++) {
-        if(a[i] < b) {
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] < b) {
             result.push(a[i]);
         }
     }
@@ -154,9 +154,9 @@ var y = "pro"
 function findElementsWithPro(a = [], b) {
     var result = [];
 
-    for(var i = 0; i < a.length; i++) {
-        if(a[i].toLowerCase().startsWith(b)) {
-           result.push(a[i])
+    for (var i = 0; i < a.length; i++) {
+        if (a[i].toLowerCase().startsWith(b)) {
+            result.push(a[i])
         }
     }
 
@@ -192,15 +192,15 @@ console.log(filterOutElements([1, 2, 3, 4, 5, 6, 7, 8, 9], 3, lessThanGivenEleme
 // d. Write a function that prints out the name of the most expensive product on your
 // shopping list. Write the name in uppercase.
 
-var x = [{name: "apples", price: 100}, 
-    {name: "milk", price: 80}, 
-    {name: "bananas", price: 150}
+var x = [{ name: "apples", price: 100 },
+{ name: "milk", price: 80 },
+{ name: "bananas", price: 150 }
 ];
 
-function totalPrice(a= []) {
+function totalPrice(a = []) {
     var result = 0;
 
-    for(var i = 0; i < a.length; i++) {
+    for (var i = 0; i < a.length; i++) {
         result += a[i].price
     }
 
@@ -209,10 +209,10 @@ function totalPrice(a= []) {
 
 console.log(totalPrice(x));
 
-function averageProductPrice(a=[]) {
+function averageProductPrice(a = []) {
     var result = 0;
 
-    for(var i = 0; i < a.length; i++) {
+    for (var i = 0; i < a.length; i++) {
         result += a[i].price / a.length
     }
 
@@ -224,9 +224,9 @@ console.log(averageProductPrice(x));
 function mostExpensiveProduct(a = []) {
     var result = "";
 
-    for(var i=0; i<a.length; i++) {
+    for (var i = 0; i < a.length; i++) {
         var max = a[0].price;
-        if(a[i].price > max) {
+        if (a[i].price > max) {
             max = a[i].price;
             result += a[i].name;
         }
@@ -253,9 +253,9 @@ function checkStringCapitals(a = "") {
     var result = true;
     var temp;
 
-    for(var i = 0; i < a.length; i++) {
+    for (var i = 0; i < a.length; i++) {
         temp = a[i].toUpperCase();
-        if(temp !== a[i]) {
+        if (temp !== a[i]) {
             result = false;
         }
     }
@@ -272,9 +272,9 @@ function checkStringForDigits(a = "") {
     var result = false;
     var temp;
 
-    for(var i = 0; i < a.length; i++) {
+    for (var i = 0; i < a.length; i++) {
         temp = parseInt(a[i]);
-        if(temp) {
+        if (temp) {
             result = true;
         }
     }
@@ -289,16 +289,16 @@ console.log(checkStringForDigits("asdads"));
 
 function checkIfStringHexColor(a = "") {
 
-    if(a[0] != "#") {
+    if (a[0] != "#") {
         return false;
     }
 
-    if(!(a.length == 4 || a.length == 7)) {
+    if (!(a.length == 4 || a.length == 7)) {
         return false;
     }
 
-    for(var i = 1; i < a.length; i++) {
-        if(!((a[i].charCodeAt(0) <= '0'.charCodeAt(0) && a[i].charCodeAt(0) <= 9) || (a[i].charCodeAt(0) >= 'a'.charCodeAt(0) && a[i].charCodeAt(0) <= 'f'.charCodeAt(0)) || (a[i].charCodeAt(0) >= 'A'.charCodeAt(0) || a[i].charCodeAt(0) <= 'F'.charCodeAt(0)))) {
+    for (var i = 1; i < a.length; i++) {
+        if (!((a[i].charCodeAt(0) <= '0'.charCodeAt(0) && a[i].charCodeAt(0) <= 9) || (a[i].charCodeAt(0) >= 'a'.charCodeAt(0) && a[i].charCodeAt(0) <= 'f'.charCodeAt(0)) || (a[i].charCodeAt(0) >= 'A'.charCodeAt(0) || a[i].charCodeAt(0) <= 'F'.charCodeAt(0)))) {
             return false;
         }
     }
@@ -313,8 +313,8 @@ console.log(checkIfStringHexColor("123456"));
 // d. Write a function that checks if a given number belongs to the interval from 1900 to 2018.
 
 function checkNumberInterval(a) {
-    
-    if(a >= 1900 && a <= 2018) {
+
+    if (a >= 1900 && a <= 2018) {
         return true;
     }
 
@@ -329,7 +329,7 @@ console.log(checkNumberInterval(2007));
 
 
 function validator() {
-    return {checkStringCapitals, checkStringForDigits, checkIfStringHexColor, checkNumberInterval};
+    return { checkStringCapitals, checkStringForDigits, checkIfStringHexColor, checkNumberInterval };
 }
 
 
@@ -346,7 +346,7 @@ console.log(val);
 
 function daysUntilMyBirthday(input) {
     var today = new Date("February 20, 2023 01:01:00");
-    var oneDay = 24*60*60*1000;
+    var oneDay = 24 * 60 * 60 * 1000;
 
     var a = new Date(input);
     var birthday = a;
@@ -362,7 +362,7 @@ function daysUntilBirthday(input) {
     var today = new Date();
     console.log(today);
 
-    var oneDay = 24*60*60*1000;
+    var oneDay = 24 * 60 * 60 * 1000;
 
     var a = new Date(input);
     var birthday = a;
@@ -379,7 +379,7 @@ console.log(daysUntilBirthday("June 21 2023"));
 // Input: 8:22:13 11:43:22
 // Output: 3 hours 21 minutes 9 seconds
 
-function calculateTripTime(input1 = {hours, minutes, seconds }, input2 = {hours, minutes, seconds }) {
+function calculateTripTime(input1 = { hours, minutes, seconds }, input2 = { hours, minutes, seconds }) {
     var result = {};
 
     result.hours = input2.hours - input1.hours;
@@ -390,31 +390,31 @@ function calculateTripTime(input1 = {hours, minutes, seconds }, input2 = {hours,
 
 }
 
-console.log(calculateTripTime({hours: 8, minutes: 22, seconds: 13}, {hours: 11, minutes: 43, seconds: 22}))
+console.log(calculateTripTime({ hours: 8, minutes: 22, seconds: 13 }, { hours: 11, minutes: 43, seconds: 22 }))
 
 
 function calculateTripDuration(startT, endT) {
     var ar = startT.split(":");
     var ar2 = endT.split(":");
-  
+
     console.log(ar, ar2);
-  
+
     var start = new Date(0, 0, 0, ar[0], ar[1], ar[2]);
     var end = new Date(0, 0, 0, ar2[0], ar2[1], ar2[2]);
-  
+
     console.log(start, end);
-  
+
     var diff = end.getTime() - start.getTime();
-  
+
     var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     console.log(hours);
     var min = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     var sec = Math.floor((diff % (1000 * 60)) / 1000);
-  
+
     return hours + " hours " + min + " minutes " + sec + " seconds ";
-  }
-  
-  console.log(calculateTripDuration("8:22:13", "11:43:22"));
+}
+
+console.log(calculateTripDuration("8:22:13", "11:43:22"));
 
 //task 10
 // a. Write a constructor function that creates points in space. Each point in space has
@@ -438,7 +438,7 @@ function distanceBetweenPoints(point1, point2) {
     var yDifference = point1.y - point2.y;
     var zDifference = point1.z - point2.z;
 
-    return Math.sqrt(xDifference*xDifference + yDifference*yDifference + zDifference * zDifference);
+    return Math.sqrt(xDifference * xDifference + yDifference * yDifference + zDifference * zDifference);
 }
 
 var distance = distanceBetweenPoints(point1, point2);
@@ -453,23 +453,23 @@ console.log(distance);
 //a.
 //b.
 function generateRandomNumber(input1, input2) {
-    
+
     return Math.floor(Math.random() * (input2 - input1 + 1) + input1);
 }
-  
-  console.log(generateRandomNumber(5, 20));
-  console.log(generateRandomNumber(50, 100));
 
-  //c.
-  function arrayOfNumbers(a, b) {
+console.log(generateRandomNumber(5, 20));
+console.log(generateRandomNumber(50, 100));
+
+//c.
+function arrayOfNumbers(a, b) {
     var result = [];
-    for(var i = 0; i < a; i++) {
-        result[i] = b(a, a*a);
+    for (var i = 0; i < a; i++) {
+        result[i] = b(a, a * a);
     }
     return result;
-  }
-  console.log(arrayOfNumbers(50, generateRandomNumber));
-  console.log(arrayOfNumbers(5, generateRandomNumber ));
+}
+console.log(arrayOfNumbers(50, generateRandomNumber));
+console.log(arrayOfNumbers(5, generateRandomNumber));
 
 //task 12.
 //Write a function that shuffles the elements of a given array.
@@ -480,8 +480,29 @@ function shuffleElements(a) {
     var result = [];
 
 
+
     return result;
 }
 
 console.log(shuffleElements([3, 6, 11, 2, 9, 1]));
+
+function shuffle(array) {
+    var shuffledArray = [];
+
+    var usedIndexes = [];
+    var randomIndex;
+
+    for (var counter = 0; counter < array.length;) {
+        randomIndex = Math.floor(Math.random() * array.length);
+        if (usedIndexes.indexOf(randomIndex) == -1) {
+            shuffledArray.push(array[randomIndex]);
+            usedIndexes.push(randomIndex);
+            counter++;
+        }
+    }
+
+    return shuffledArray;
+}
+
+console.log(shuffle([3, 6, 11, 2, 9, 1]))
 
