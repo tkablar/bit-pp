@@ -155,7 +155,7 @@ function findElementsWithPro(a = [], b) {
     var result = [];
 
     for(var i = 0; i < a.length; i++) {
-        if(a[i].toLowerCase().includes(b)) {
+        if(a[i].toLowerCase().startsWith(b)) {
            result.push(a[i])
         }
     }
@@ -167,9 +167,15 @@ console.log(findElementsWithPro(x, y))
 
 //c. Write a function that expects an array and a callback function that filters out
 //some of the elements. Use functions defined in a) or b) to test it.
+function filterOutElements(a = [], b, c) {
+
+    return c(a, b);
+
+}
 
 
 
+console.log(filterOutElements([1, 2, 3, 4, 5, 6, 7, 8, 9], 3, lessThanGivenElement))
 
 //task 6
 //a
@@ -232,3 +238,137 @@ function mostExpensiveProduct(a = []) {
 console.log(mostExpensiveProduct(x));
 
 //task 7
+// a. Write a function that checks if a given string is written in all capitals.
+// b. Write a function that checks if a given string contains any digits.
+// c. Write a function that checks if a given string is a valid hexadecimal color.
+// d. Write a function that checks if a given number belongs to the interval from 1900
+// to 2018.
+// e. Write a function named validator that returns an object with properties
+// stringValidator, passwordValidator, colorValidator, and yearValidator referencing
+// the functions from a) to d).
+
+//a
+
+function checkStringCapitals(a = "") {
+    var result = true;
+    var temp;
+
+    for(var i = 0; i < a.length; i++) {
+        temp = a[i].toUpperCase();
+        if(temp !== a[i]) {
+            result = false;
+        }
+    }
+
+    return result;
+}
+
+console.log(checkStringCapitals("TODayIsAgoodDay"));
+console.log(checkStringCapitals("YAY"))
+
+//b
+
+function checkStringForDigits(a = "") {
+    var result = false;
+    var temp;
+
+    for(var i = 0; i < a.length; i++) {
+        temp = parseInt(a[i]);
+        if(temp) {
+            result = true;
+        }
+    }
+
+    return result;
+}
+
+console.log(checkStringForDigits("asd9ads"));
+console.log(checkStringForDigits("asdads"));
+
+// c
+
+function checkIfStringHexColor(a = "") {
+
+    if(a[0] != "#") {
+        return false;
+    }
+
+    if(!(a.length == 4 || a.length == 7)) {
+        return false;
+    }
+
+    for(var i = 1; i < a.length; i++) {
+        if(!((a[i].charCodeAt(0) <= '0'.charCodeAt(0) && a[i].charCodeAt(0) <= 9) || (a[i].charCodeAt(0) >= 'a'.charCodeAt(0) && a[i].charCodeAt(0) <= 'f'.charCodeAt(0)) || (a[i].charCodeAt(0) >= 'A'.charCodeAt(0) || a[i].charCodeAt(0) <= 'F'.charCodeAt(0)))) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(checkIfStringHexColor("#1AFFa1"));
+console.log(checkIfStringHexColor("#F00"));
+console.log(checkIfStringHexColor("123456"));
+
+// d. Write a function that checks if a given number belongs to the interval from 1900 to 2018.
+
+function checkNumberInterval(a) {
+    
+    if(a >= 1900 && a <= 2018) {
+        return true;
+    }
+
+    return false;
+}
+
+console.log(checkNumberInterval(1989));
+console.log(checkNumberInterval(1235));
+console.log(checkNumberInterval(2007));
+
+//e. Write a function named validator that returns an object with properties stringValidator, passwordValidator, colorValidator, and yearValidator referencing the functions from a) to d).
+
+
+function validator() {
+    return {checkStringCapitals, checkStringForDigits, checkIfStringHexColor, checkNumberInterval};
+}
+
+
+var val = validator().checkStringCapitals("BIRDS");
+
+console.log();
+console.log(val);
+
+//task 8
+// Write a function that calculates a number of days to your birthday.
+
+// Input: 25 February
+// Output: 5 days
+
+var birthDay = 21;
+var birthMonth = 6;
+
+function DaysUntilBirthday(a, b) {
+
+    var myBirthdayThisYear = new Date(new Date().getFullYear(), a - 1, b).setHours(23, 59, 59)
+   
+    var addToYear = myBirthdayThisYear > Date.now() ? 0 : 1;
+
+    var oneDay = 24*60*60*1000;
+
+    var secondDate = new Date(new Date().getFullYear()+ addToYear, b, a);
+
+    var firstDate = new Date();
+    var days = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())) / (oneDay));
+
+    var daysOrDay = days === 1 ? "day" : "days";
+    return days !== 365 ? `${days} ${daysOrDay} until my birthday!`: `today is my birthday`;
+
+};
+
+console.log(DaysUntilBirthday(6, 21));
+
+
+function daysUntilMyBirthday() {
+    var today = setDate()
+    var oneDay = 24*60*60*1000;
+}
