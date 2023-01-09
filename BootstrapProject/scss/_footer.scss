@@ -1,0 +1,134 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+
+@media #{$mobile} {
+    #footer {
+        @include color-blue; 
+        
+        footer {
+            @include color-blue;
+            
+            #line {
+                color: $text-white;
+                @include lato-nine;
+                font-size: 1em;
+                text-align: center;
+                margin-top: 2em;
+                
+                img {
+                    width: 3.5em;
+                }
+
+                img:hover {
+                    background-color: $green-primary;
+                }
+                
+            }
+            p {
+                @include lato-seven;
+                padding: 0px 4em;
+            }
+            #copyright {
+                p.copyright {
+                    color: $text-white;
+                    @include lato-seven;
+                    font-size: 0.9em;
+                    margin-top: 2em; 
+                    margin-bottom: 0px;
+                    text-align: center;
+                }
+            }
+            p.gray {
+                color: $input-text;
+                font-size: 0.7em;
+                margin-top: 0px;
+            } 
+        }
+    } 
+}
+
+@media #{$tablet} {
+    #footer {
+        background-color: $blue-nav; 
+        footer {
+            background-color: $blue-nav;
+            #line {
+                color: $text-white;
+                @include lato-nine;
+                font-size: 1em;
+                text-align: center;
+                margin-top: 2em;
+                img {
+                    width: 3.5em;
+                }
+                img:hover {
+                    background-color: $green-primary;
+                }
+            }
+            p {
+                @include lato-seven;
+            }
+            #copyright {
+                p.copyright {
+                    color: $text-white;
+                    @include lato-seven;
+                    font-size: 0.9em;
+                    text-align: center;
+                    margin-top: 2em; 
+                    margin-bottom: 0px;
+                }
+            }
+            p.gray {
+                color: $input-text;
+                font-size: 0.7em;
+                margin-top: 0px;
+            } 
+        }
+    } 
+}
+
+
+
+@media #{$desktop} {
+    #footer {
+        background-color: $blue-nav; 
+        footer {
+            background-color: $blue-nav;
+            #line {
+                color: $text-white;
+                @include lato-nine;
+                font-size: 1em;
+                text-align: center;
+                margin-top: 2em;
+                // img {
+                //     background-color: $blue-nav;
+                //     width: 3.5em;
+                // }
+                // img:hover {
+                //     background-color: $green-primary;
+                //     filter: invert(100%);
+                // }
+            }
+            p {
+                @include lato-seven;
+                padding: 0px 4em;
+            }
+            #copyright {
+                p.copyright {
+                    color: $text-white;
+                    @include lato-seven;
+                    font-size: 0.9em;
+                    margin-top: 2em; 
+                    margin-bottom: 0px;
+                    text-align: center;
+                }
+            }
+            p.gray {
+                color: $input-text;
+                font-size: 0.7em;
+                margin-top: 0px;
+            } 
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import "./_variables.scss";
+
+
+
+@mixin color-blue{
+    background-color: $blue-nav;
+    color: $text-white;
+}
+
+@mixin button-green {
+    background-color: $green-primary;
+    color: $text-white;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+@mixin lato-five {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+}
+
+@mixin lato-seven {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+@mixin lato-nine {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+}
+
+//contact - input
+
+@mixin input-border {
+    border: solid 0.15em;
+    border-color: $input-line;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px; 
+}
+

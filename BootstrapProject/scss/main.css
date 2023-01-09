@@ -1,0 +1,677 @@
+* {
+  font-family: "Lato", sans-serif; }
+
+nav {
+  background-color: #293e4f;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 900; }
+  nav a:-webkit-any-link {
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none; }
+  nav .navbar-toggler {
+    background-color: #00bc9c;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    padding: 0.5em 0.7em;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    border: 0px; }
+    nav .navbar-toggler img {
+      width: 1.32em; }
+
+@media (min-width: 300px) and (max-width: 576px) {
+  #first {
+    width: 100%;
+    background-color: #00bc9c; }
+    #first #firstbg {
+      padding-bottom: 3em; }
+    #first img.profile {
+      width: 15em;
+      margin-top: 6em;
+      margin-bottom: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    #first p {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 1.9em;
+      text-align: center; }
+    #first .decoration {
+      display: inline-flex;
+      justify-content: center;
+      color: #ffffff;
+      width: 100%;
+      margin: 0px; }
+      #first .decoration .line {
+        background-color: #ffffff;
+        width: 4.2em;
+        height: 0.2em;
+        display: flex;
+        margin: 0 1em; }
+      #first .decoration .star {
+        position: relative;
+        bottom: 0.8em; }
+    #first .text {
+      font-size: 0.9em;
+      font-weight: 700;
+      text-align: center; } }
+@media (min-width: 577px) and (max-width: 1199px) {
+  #first {
+    width: 100%;
+    background-color: #00bc9c; }
+    #first #firstbg {
+      padding-bottom: 3em; }
+    #first img.profile {
+      width: 15em;
+      margin-top: 6em;
+      margin-bottom: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    #first p {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 3em;
+      text-align: center; }
+    #first .decoration {
+      display: inline-flex;
+      justify-content: center;
+      color: #ffffff;
+      width: 100%;
+      margin: 0px; }
+      #first .decoration .line {
+        background-color: #ffffff;
+        width: 4.2em;
+        height: 0.2em;
+        display: flex;
+        margin: 0 1em; }
+      #first .decoration .star {
+        position: relative;
+        bottom: 0.8em; }
+    #first .text {
+      font-size: 1em;
+      font-weight: 700;
+      text-align: center; } }
+@media (min-width: 1200px) {
+  #first {
+    background-color: #00bc9c; }
+    #first #firstbg {
+      padding-bottom: 5em; }
+    #first img.profile {
+      width: 20em;
+      margin-top: 10em;
+      margin-bottom: 5em;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    #first p {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 4.5em;
+      text-align: center; }
+    #first .decoration {
+      display: inline-flex;
+      justify-content: center;
+      color: #ffffff;
+      width: 100%;
+      margin: 0px; }
+      #first .decoration .line {
+        background-color: #ffffff;
+        width: 6em;
+        height: 0.2em;
+        display: flex;
+        margin: 0 1em; }
+      #first .decoration .star {
+        position: relative;
+        bottom: 0.8em; }
+    #first .text {
+      font-size: 1.5em;
+      text-align: center; } }
+@media (min-width: 300px) and (max-width: 576px) {
+  #portfolio {
+    background-color: #ffffff;
+    color: #293e4f; }
+    #portfolio p {
+      color: #293e4f;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 2.5em;
+      text-align: center;
+      margin-top: 1.5em; }
+    #portfolio .decoration {
+      display: inline-flex;
+      justify-content: center;
+      color: #293e4f;
+      width: 100%;
+      margin: 0px; }
+      #portfolio .decoration .line {
+        background-color: #293e4f;
+        width: 3em;
+        height: 0.2em;
+        display: flex;
+        margin: 0 1em; }
+      #portfolio .decoration .star {
+        color: #293e4f;
+        position: relative;
+        bottom: 0.8em; }
+    #portfolio img.portfolio {
+      margin: 0.5em auto;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center; } }
+@media (min-width: 577px) and (max-width: 1199px) {
+  #portfolio {
+    background-color: #ffffff;
+    color: #293e4f; }
+    #portfolio p {
+      color: #293e4f;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 2.5em;
+      text-align: center;
+      margin-top: 1.5em; }
+    #portfolio .decoration {
+      display: inline-flex;
+      justify-content: center;
+      color: #293e4f;
+      width: 100%;
+      margin: 0px; }
+      #portfolio .decoration .line {
+        background-color: #293e4f;
+        width: 3em;
+        height: 0.2em;
+        display: flex;
+        margin: 0 1em; }
+      #portfolio .decoration .star {
+        color: #293e4f;
+        position: relative;
+        bottom: 0.8em; }
+    #portfolio img.portfolio {
+      margin: 0.5em auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center; } }
+@media (min-width: 1200px) {
+  #portfolio {
+    background-color: #ffffff;
+    color: #293e4f;
+    padding-bottom: 6em; }
+    #portfolio p {
+      color: #293e4f;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 2em;
+      text-align: center;
+      margin-top: 2.5em; }
+    #portfolio .decoration {
+      display: inline-flex;
+      justify-content: center;
+      color: #293e4f;
+      width: 100%;
+      margin: 0px; }
+      #portfolio .decoration .line {
+        background-color: #293e4f;
+        width: 3em;
+        height: 0.2em;
+        display: flex;
+        margin: 0 1em; }
+      #portfolio .decoration .star {
+        color: #293e4f;
+        position: relative;
+        bottom: 0.8em; }
+    #portfolio img.portfolio {
+      margin: 20px 0px;
+      width: 25em; } }
+@media (min-width: 300px) and (max-width: 576px) {
+  #about {
+    background-color: #00bc9c;
+    margin-top: 5em;
+    padding-bottom: 3em; }
+    #about p {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 2em;
+      text-align: left;
+      margin-top: 2.5em; }
+    #about .about {
+      text-align: center; }
+    #about .decoration {
+      display: inline-flex;
+      justify-content: center;
+      color: #ffffff;
+      width: 100%;
+      margin: 0px; }
+      #about .decoration .line {
+        background-color: #ffffff;
+        width: 3em;
+        height: 0.2em;
+        display: flex;
+        margin: 0 1em; }
+      #about .decoration .star {
+        position: relative;
+        bottom: 0.8em; }
+    #about p.text {
+      font-size: 1em;
+      font-family: "Lato", sans-serif;
+      font-weight: 700; }
+    #about button {
+      background-color: #00bc9c;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      padding: 0.5em 1em;
+      border-radius: 0.3em;
+      border-color: #ffffff;
+      border-style: solid;
+      margin: 1em auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #about button:hover {
+        background-color: #293e4f; } }
+@media (min-width: 577px) and (max-width: 1199px) {
+  #about {
+    background-color: #00bc9c;
+    margin-top: 5em;
+    padding-bottom: 4em; }
+    #about p {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 2em;
+      text-align: left;
+      margin-top: 2.5em; }
+    #about .about {
+      text-align: center; }
+    #about .decoration {
+      display: inline-flex;
+      justify-content: center;
+      color: #ffffff;
+      width: 100%;
+      margin: 0px; }
+      #about .decoration .line {
+        background-color: #ffffff;
+        width: 3em;
+        height: 0.2em;
+        display: flex;
+        margin: 0 1em; }
+      #about .decoration .star {
+        position: relative;
+        bottom: 0.8em; }
+    #about p.text {
+      font-size: 1em;
+      font-family: "Lato", sans-serif;
+      font-weight: 700; }
+    #about button {
+      background-color: #00bc9c;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      padding: 0.5em 1em;
+      border-radius: 0.3em;
+      border-color: #ffffff;
+      border-style: solid;
+      margin: 1em auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #about button:hover {
+        background-color: #293e4f; } }
+@media (min-width: 1200px) {
+  #about {
+    background-color: #00bc9c;
+    padding-bottom: 5em; }
+    #about p {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 2em;
+      text-align: center;
+      margin-top: 2.5em; }
+    #about .decoration {
+      display: inline-flex;
+      justify-content: center;
+      color: #ffffff;
+      width: 100%;
+      margin: 0px; }
+      #about .decoration .line {
+        background-color: #ffffff;
+        width: 3em;
+        height: 0.2em;
+        display: flex;
+        margin: 0 1em; }
+      #about .decoration .star {
+        position: relative;
+        bottom: 0.8em; }
+    #about p.text {
+      font-size: 1em;
+      font-family: "Lato", sans-serif;
+      font-weight: 700; }
+    #about button {
+      background-color: #00bc9c;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      padding: 0.5em 1em;
+      border-radius: 0.3em;
+      border-color: #ffffff;
+      border-style: solid;
+      margin: 1em auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #about button:hover {
+        background-color: #293e4f; } }
+@media (min-width: 300px) and (max-width: 576px) {
+  #contact {
+    background-color: #ffffff;
+    color: #293e4f;
+    padding-bottom: 5em; }
+    #contact p {
+      color: #293e4f;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 2em;
+      text-align: center;
+      margin-top: 2.5em; }
+    #contact .decoration {
+      display: inline-flex;
+      justify-content: center;
+      color: #293e4f;
+      width: 100%;
+      margin: 0px;
+      margin-bottom: 2em; }
+      #contact .decoration .line {
+        background-color: #293e4f;
+        width: 3em;
+        height: 0.2em;
+        display: flex;
+        margin: 0 1em; }
+      #contact .decoration .star {
+        color: #293e4f;
+        position: relative;
+        bottom: 0.8em; }
+    #contact #contact-form .row {
+      --bs-gutter-x: 0em; }
+    #contact #contact-form label {
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      color: #858e95; }
+    #contact #contact-form input {
+      color: #212529;
+      width: 100%;
+      border: solid 0.15em;
+      border-color: #eeeeee;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      margin-bottom: 1em; }
+    #contact #contact-form textarea {
+      color: #212529;
+      width: 100%;
+      border: solid 0.15em;
+      border-color: #eeeeee;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      margin-bottom: 1em; }
+    #contact #contact-form :focus {
+      color: #212529; }
+    #contact button {
+      background-color: #00bc9c;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      padding: 0.5em 1em;
+      border-radius: 0.3em;
+      border: 0px; }
+      #contact button:hover {
+        background-color: #293e4f; } }
+@media (min-width: 577px) and (max-width: 1199px) {
+  #contact {
+    background-color: #ffffff;
+    color: #293e4f;
+    padding-bottom: 5em;
+    margin: 0px auto; }
+    #contact p {
+      color: #293e4f;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 2em;
+      text-align: center;
+      margin-top: 2.5em; }
+    #contact .decoration {
+      display: inline-flex;
+      justify-content: center;
+      color: #293e4f;
+      width: 100%;
+      margin: 0px;
+      margin-bottom: 2em; }
+      #contact .decoration .line {
+        background-color: #293e4f;
+        width: 3em;
+        height: 0.2em;
+        display: flex;
+        margin: 0 1em; }
+      #contact .decoration .star {
+        color: #293e4f;
+        position: relative;
+        bottom: 0.8em; }
+    #contact #contact-form .row {
+      --bs-gutter-x: 0em; }
+    #contact #contact-form label {
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      color: #858e95; }
+    #contact #contact-form input {
+      color: #212529;
+      width: 100%;
+      border: solid 0.15em;
+      border-color: #eeeeee;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      margin-bottom: 1em; }
+    #contact #contact-form textarea {
+      color: #212529;
+      width: 100%;
+      border: solid 0.15em;
+      border-color: #eeeeee;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      margin-bottom: 1em; }
+    #contact #contact-form :focus {
+      color: #212529; }
+    #contact button {
+      background-color: #00bc9c;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      padding: 0.5em 1em;
+      border-radius: 0.3em;
+      border: 0px; }
+      #contact button:hover {
+        background-color: #293e4f; } }
+@media (min-width: 1200px) {
+  #contact {
+    background-color: #ffffff;
+    color: #293e4f;
+    padding-bottom: 6em; }
+    #contact p {
+      color: #293e4f;
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 2em;
+      text-align: center;
+      margin-top: 2.5em; }
+    #contact .decoration {
+      display: inline-flex;
+      justify-content: center;
+      color: #293e4f;
+      width: 100%;
+      margin: 0px;
+      margin-bottom: 2em; }
+      #contact .decoration .line {
+        background-color: #293e4f;
+        width: 3em;
+        height: 0.2em;
+        display: flex;
+        margin: 0 1em; }
+      #contact .decoration .star {
+        color: #293e4f;
+        position: relative;
+        bottom: 0.8em; }
+    #contact #contact-form .row {
+      --bs-gutter-x: 0em; }
+    #contact #contact-form label {
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      color: #858e95; }
+    #contact #contact-form input {
+      color: #212529;
+      width: 620px;
+      border: solid 0.15em;
+      border-color: #eeeeee;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      margin-bottom: 1em; }
+    #contact #contact-form textarea {
+      color: #212529;
+      width: 620px;
+      border: solid 0.15em;
+      border-color: #eeeeee;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      margin-bottom: 1em; }
+    #contact #contact-form :focus {
+      color: #212529; }
+    #contact button {
+      background-color: #00bc9c;
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      padding: 0.5em 1em;
+      border-radius: 0.3em;
+      border: 0px; }
+      #contact button:hover {
+        background-color: #293e4f; } }
+@media (min-width: 300px) and (max-width: 576px) {
+  #footer {
+    background-color: #293e4f;
+    color: #ffffff; }
+    #footer footer {
+      background-color: #293e4f;
+      color: #ffffff; }
+      #footer footer #line {
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-size: 1em;
+        text-align: center;
+        margin-top: 2em; }
+        #footer footer #line img {
+          width: 3.5em; }
+      #footer footer p {
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        padding: 0px 4em; }
+      #footer footer #copyright p.copyright {
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-size: 0.9em;
+        margin-top: 2em;
+        margin-bottom: 0px;
+        text-align: center; }
+      #footer footer p.gray {
+        color: #858e95;
+        font-size: 0.7em;
+        margin-top: 0px; } }
+@media (min-width: 577px) and (max-width: 1199px) {
+  #footer {
+    background-color: #293e4f; }
+    #footer footer {
+      background-color: #293e4f; }
+      #footer footer #line {
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-size: 1em;
+        text-align: center;
+        margin-top: 2em; }
+        #footer footer #line img {
+          width: 3.5em; }
+      #footer footer p {
+        font-family: "Lato", sans-serif;
+        font-weight: 700; }
+      #footer footer #copyright p.copyright {
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-size: 0.9em;
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 0px; }
+      #footer footer p.gray {
+        color: #858e95;
+        font-size: 0.7em;
+        margin-top: 0px; } }
+@media (min-width: 1200px) {
+  #footer {
+    background-color: #293e4f; }
+    #footer footer {
+      background-color: #293e4f; }
+      #footer footer #line {
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-size: 1em;
+        text-align: center;
+        margin-top: 2em; }
+        #footer footer #line img {
+          width: 3.5em; }
+      #footer footer p {
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        padding: 0px 4em; }
+      #footer footer #copyright p.copyright {
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-size: 0.9em;
+        margin-top: 2em;
+        margin-bottom: 0px;
+        text-align: center; }
+      #footer footer p.gray {
+        color: #858e95;
+        font-size: 0.7em;
+        margin-top: 0px; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,213 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+@media #{$mobile} {
+    #contact {
+        background-color: $text-white;
+        color: $blue-nav;
+        padding-bottom: 5em;
+        p {
+            color: $blue-nav;
+            @include lato-nine;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 2.5em;
+        }
+        .decoration {
+            display: inline-flex;
+            justify-content: center;
+            color: $blue-nav;
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 2em;
+            .line {
+                background-color: $blue-nav;
+                width: 3em;
+                height: 0.2em;
+                display: flex;
+                margin: 0 1em;
+            }
+            .star {
+                color: $blue-nav;
+                position: relative;
+                bottom: 0.8em;
+            }
+        }
+
+        #contact-form {
+            .row{
+                --bs-gutter-x: 0em;
+            }
+            label {
+                @include lato-seven;
+                color: $input-text;
+            }
+            input {
+                color: $text-gray;
+                width: 100%;
+                @include input-border;
+                margin-bottom: 1em;  
+            }
+            textarea {
+                color: $text-gray;
+                width: 100%;
+                @include input-border;
+                margin-bottom: 1em;
+            }
+            :focus {
+                color: $text-gray;
+            }
+        }
+        button {
+            @include button-green;
+            padding: 0.5em 1em;
+            border-radius: 0.3em;
+            border: 0px;    
+            &:hover {
+                background-color: $blue-nav;
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    #contact {
+        background-color: $text-white;
+        color: $blue-nav;
+        padding-bottom: 5em;
+        margin: 0px auto;
+        p {
+            color: $blue-nav;
+            @include lato-nine;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 2.5em;
+        }
+        .decoration {
+            display: inline-flex;
+            justify-content: center;
+            color: $blue-nav;
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 2em;
+            .line {
+                background-color: $blue-nav;
+                width: 3em;
+                height: 0.2em;
+                display: flex;
+                margin: 0 1em;
+            }
+            .star {
+                color: $blue-nav;
+                position: relative;
+                bottom: 0.8em;
+            }
+        }
+
+        #contact-form {
+            .row{
+                --bs-gutter-x: 0em;
+            }
+            
+            label {
+                @include lato-seven;
+                color: $input-text;
+            }
+            input {
+                color: $text-gray;
+                width: 100%;
+                @include input-border;
+                margin-bottom: 1em;  
+            }
+
+            textarea {
+                color: $text-gray;
+                width: 100%;
+                @include input-border;
+                margin-bottom: 1em;
+            }
+
+            :focus {
+                color: $text-gray;
+            }
+        }
+        button {
+            @include button-green;
+            padding: 0.5em 1em;
+            border-radius: 0.3em;
+            border: 0px;
+            &:hover {
+                background-color: $blue-nav;
+            }
+        }
+    }
+}
+
+@media #{$desktop} {
+    #contact {
+        background-color: $text-white;
+        color: $blue-nav;
+        // height: 50em;
+        padding-bottom: 6em;
+        p {
+            color: $blue-nav;
+            @include lato-nine;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 2.5em;
+        }
+        .decoration {
+            display: inline-flex;
+            justify-content: center;
+            color: $blue-nav;
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 2em;
+            .line {
+                background-color: $blue-nav;
+                width: 3em;
+                height: 0.2em;
+                display: flex;
+                margin: 0 1em;
+            }
+            .star {
+                color: $blue-nav;
+                position: relative;
+                bottom: 0.8em;
+            }
+        }
+        #contact-form {
+            .row{
+                --bs-gutter-x: 0em;
+            }
+            label {
+                @include lato-seven;
+                color: $input-text;
+            }
+            input {
+                color: $text-gray;
+                width: 620px;
+                @include input-border;
+                margin-bottom: 1em;  
+            }
+            textarea {
+                color: $text-gray;
+                width: 620px;
+                @include input-border;
+                margin-bottom: 1em;
+            }
+            :focus {
+                color: $text-gray;
+            }
+        }
+        button {
+            @include button-green;
+            padding: 0.5em 1em;
+            border-radius: 0.3em;
+            border: 0px;
+            &:hover {
+                background-color: $blue-nav;
+            }
+        }
+    }
+}

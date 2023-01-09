@@ -1,0 +1,25 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+* {
+    font-family:  "Lato", sans-serif;
+}
+nav {
+    @include color-blue;
+    font-size: 1em;
+    font-weight: 900;
+    a:-webkit-any-link {
+        color: $text-white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .navbar-toggler {
+        @include button-green;
+        padding: 0.5em 0.7em;
+        @include lato-nine;
+        border: 0px;
+        img {
+            width: 1.32em;
+        } 
+    } 
+}

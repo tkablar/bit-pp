@@ -1,0 +1,167 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+
+@media #{$mobile} {
+    #about {
+        background-color: $green-primary;
+        margin-top: 5em;
+        padding-bottom: 3em;
+        p {
+            color: $text-white;
+            @include lato-nine;
+            font-size: 2em;
+            text-align: left;
+            margin-top: 2.5em;
+        }
+        .about {
+            text-align: center;
+        }
+        .decoration {
+            display: inline-flex;
+            justify-content: center;
+            color: $text-white;
+            width: 100%;
+            margin: 0px;
+            .line {
+                background-color: $text-white;
+                width: 3em;
+                height: 0.2em;
+                display: flex;
+                margin: 0 1em;
+            }
+            .star {
+                position: relative;
+                bottom: 0.8em;
+            }
+        }
+        p.text {
+            font-size: 1em;
+            @include lato-seven;
+        }
+        button {
+            @include button-green;
+            padding: 0.5em 1em;
+            border-radius: 0.3em;
+            border-color: $text-white;
+            border-style: solid;
+            margin: 1em auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: $blue-nav;
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    #about {
+        background-color: $green-primary;
+        margin-top: 5em;
+        padding-bottom: 4em;
+        p {
+            color: $text-white;
+            @include lato-nine;
+            font-size: 2em;
+            text-align: left;
+            margin-top: 2.5em;
+        }
+        .about {
+            text-align: center;
+        }
+        .decoration {
+            display: inline-flex;
+            justify-content: center;
+            color: $text-white;
+            width: 100%;
+            margin: 0px;
+            .line {
+                background-color: $text-white;
+                width: 3em;
+                height: 0.2em;
+                display: flex;
+                margin: 0 1em;
+            }
+            .star {
+                position: relative;
+                bottom: 0.8em;
+            }
+        }
+        p.text {
+            font-size: 1em;
+            @include lato-seven;
+        }
+        button {
+            @include button-green;
+            padding: 0.5em 1em;
+            border-radius: 0.3em;
+            border-color: $text-white;
+            border-style: solid;
+            margin: 1em auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: $blue-nav;
+            }
+        }
+    }
+}
+
+@media #{$desktop} {
+    #about {
+        background-color: $green-primary;
+        padding-bottom: 5em;
+        p {
+            color: $text-white;
+            @include lato-nine;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 2.5em;
+        }
+        .decoration {
+            display: inline-flex;
+            justify-content: center;
+            color: $text-white;
+            width: 100%;
+            margin: 0px;
+            .line {
+                background-color: $text-white;
+                width: 3em;
+                height: 0.2em;
+                display: flex;
+                margin: 0 1em;
+            }
+            .star {
+                position: relative;
+                bottom: 0.8em;
+            }
+        }
+        p.text {
+            font-size: 1em;
+            @include lato-seven;
+        }
+        button {
+            @include button-green;
+            padding: 0.5em 1em;
+            border-radius: 0.3em;
+            border-color: $text-white;
+            border-style: solid;
+            margin: 1em auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: $blue-nav;
+            }
+        }
+    }
+}

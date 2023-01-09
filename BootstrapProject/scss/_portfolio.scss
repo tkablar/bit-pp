@@ -1,0 +1,124 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+@media #{$mobile} {
+    #portfolio {
+        background-color: $text-white;
+        color: $blue-nav;
+        p {
+            color: $blue-nav;
+            @include lato-nine;
+            font-size: 2.5em;
+            text-align: center;
+            margin-top: 1.5em;
+        }
+        .decoration {
+            display: inline-flex;
+            justify-content: center;
+            color: $blue-nav;
+            width: 100%;
+            margin: 0px;
+            .line {
+                background-color: $blue-nav;
+                width: 3em;
+                height: 0.2em;
+                display: flex;
+                margin: 0 1em;
+            }
+            .star {
+                color: $blue-nav;
+                position: relative;
+                bottom: 0.8em;
+            }
+        }
+        img.portfolio {
+            margin: 0.5em auto;
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+
+        }
+    }
+}
+
+@media #{$tablet} {
+    #portfolio {
+        background-color: $text-white;
+        color: $blue-nav;
+        p {
+            color: $blue-nav;
+            @include lato-nine;
+            font-size: 2.5em;
+            text-align: center;
+            margin-top: 1.5em;
+        }
+        .decoration {
+            display: inline-flex;
+            justify-content: center;
+            color: $blue-nav;
+            width: 100%;
+            margin: 0px;
+            .line {
+                background-color: $blue-nav;
+                width: 3em;
+                height: 0.2em;
+                display: flex;
+                margin: 0 1em;
+            }
+            .star {
+                color: $blue-nav;
+                position: relative;
+                bottom: 0.8em;
+            }
+        }
+        img.portfolio {
+            margin: 0.5em auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+
+        }
+    }
+}
+
+@media #{$desktop} {
+    #portfolio {
+        background-color: $text-white;
+        color: $blue-nav;
+        padding-bottom: 6em;
+        p {
+            color: $blue-nav;
+            @include lato-nine;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 2.5em;
+        }
+        .decoration {
+            display: inline-flex;
+            justify-content: center;
+            color: $blue-nav;
+            width: 100%;
+            margin: 0px;
+            .line {
+                background-color: $blue-nav;
+                width: 3em;
+                height: 0.2em;
+                display: flex;
+                margin: 0 1em;
+            }
+            .star {
+                color: $blue-nav;
+                position: relative;
+                bottom: 0.8em;
+            }
+        }
+        img.portfolio {
+            margin: 20px 0px;
+            width: 25em;
+        }
+    }
+}

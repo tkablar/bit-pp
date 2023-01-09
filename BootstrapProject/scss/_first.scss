@@ -1,0 +1,149 @@
+@import "./_variables.scss";
+@import "./_mixins.scss";
+
+
+@media #{$mobile} {
+    #first {
+        width: 100%;
+        background-color: $green-primary;
+        #firstbg {
+            padding-bottom: 3em;
+        }
+        img.profile {
+            width: 15em;
+            margin-top: 6em;
+            margin-bottom: 2em;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            color: $text-white;
+            @include lato-nine;
+            font-size: 1.9em;
+            text-align: center;
+        }
+        .decoration {
+            display: inline-flex;
+            justify-content: center;
+            color: $text-white;
+            width: 100%;
+            margin: 0px;
+            .line {
+                background-color: $text-white;
+                width: 4.2em;
+                height: 0.2em;
+                display: flex;
+                margin: 0 1em;
+            }
+            .star {
+                position: relative;
+                bottom: 0.8em;
+            }
+        }
+        .text {
+            font-size: 0.9em;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+}
+
+@media #{$tablet} {
+    #first {
+        width: 100%;
+        background-color: $green-primary;
+        #firstbg {
+            padding-bottom: 3em;
+        }
+        img.profile {
+            width: 15em;
+            margin-top: 6em;
+            margin-bottom: 2em;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            color: $text-white;
+            @include lato-nine;
+            font-size: 3em;
+            text-align: center;
+        }
+        .decoration {
+            display: inline-flex;
+            justify-content: center;
+            color: $text-white;
+            width: 100%;
+            margin: 0px;
+            .line {
+                background-color: $text-white;
+                width: 4.2em;
+                height: 0.2em;
+                display: flex;
+                margin: 0 1em;
+            }
+            .star {
+                position: relative;
+                bottom: 0.8em;
+            }
+            
+        }
+        .text {
+            font-size: 1em;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+}
+
+@media #{$desktop} {
+    #first {
+        background-color: $green-primary;
+        #firstbg {
+            padding-bottom: 5em;
+        }
+        img.profile {
+            width: 20em;
+            margin-top: 10em;
+            margin-bottom: 5em;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            color: $text-white;
+            @include lato-nine;
+            font-size: 4.5em;
+            text-align: center;
+        }
+        .decoration {
+            display: inline-flex;
+            justify-content: center;
+            color: $text-white;
+            width: 100%;
+            margin: 0px;
+            .line {
+                background-color: $text-white;
+                width: 6em;
+                height: 0.2em;
+                display: flex;
+                margin: 0 1em;
+            }
+            .star {
+                position: relative;
+                bottom: 0.8em;
+            }
+        }
+        .text {
+            font-size: 1.5em;
+            text-align: center;
+        }
+    }
+}
