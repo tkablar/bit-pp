@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    padding: 25;
+    background-color: #eec0c0;
+    
+}
+
+.dark-mode {
+    background-color: #858585;
+}
+
+button {
+    background-color: brown;
+    color: aliceblue;
+    padding: 10px 15px;
+    border: none;    
+}
+
+#btn {
+    margin-top: 150px;
+}
+
+button:hover {
+    background-color: rgb(84, 50, 50);
+}
+
+#btn2 {
+    background-color: rgb(232, 199, 68);
+    color: aliceblue;
+    padding: 10px 15px;
+    border: none;
+    
+}
+
+#btn2:hover {
+    background-color: rgb(132, 118, 63);
+}

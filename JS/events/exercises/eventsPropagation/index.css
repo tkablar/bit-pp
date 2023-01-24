@@ -1,0 +1,9 @@
+
+img.first, img.fourth {
+    width: 300px;    
+}
+
+.second, .third, .fourth, .fifth, .sixth {
+    width: 150px;
+}
+

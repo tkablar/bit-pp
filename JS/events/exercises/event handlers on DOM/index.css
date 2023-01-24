@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(202, 202, 202);
+}
+
+#first{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    width: 280px;
+    padding: 8px 10px;
+    border: none;
+}
+
+input:focus {
+    border: solid 5px lightblue;
+}
+
+button {
+    width: 90px;
+    background-color: rgb(199, 31, 31);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+}
+
+p {
+    background-color: rgb(195, 194, 194);
+    color: black;
+    padding: 8px;
+    margin: 15px;
+    width: 150px;
+    word-wrap: break-word;
+}

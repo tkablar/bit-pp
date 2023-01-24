@@ -1,0 +1,52 @@
+body {
+    overflow-x: hidden;
+    overflow: hidden;
+    height: 500px;
+    width: 850px;
+    position: absolute;
+    left: 25%;
+}
+
+#img-2 {
+    position: absolute;
+    top: 355px;
+    left: 400px;
+    width: 50px;
+    z-index: 0;
+    visibility: hidden;
+}
+
+#img-1 {
+    position: absolute;
+    top: 355px;
+    left: 400px;
+    width: 60px;
+    z-index: 1;
+}
+
+.bg {
+    height: 500px;
+    width: 850px;
+    background: url("./images/bg.jpg");
+    display:block;
+    position: absolute;
+    /* left: 25%; */
+    background-size: cover;
+    background-repeat: repeat-x;
+    z-index: -1;
+    overflow-x: hidden;
+    overflow: hidden;
+    /* animation: moveRight 10s linear infinite; */
+}
+
+@keyframes moveRight {
+    
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+    /* 100% { transform: translateX(-2950px);} */
+    
+}
