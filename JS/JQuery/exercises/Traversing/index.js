@@ -4,18 +4,18 @@ $(document).ready(function() {
     $("body").append("<div></div>");
     $("div:last").addClass("second");
 
-    $(".first").append("<div></div>");
-    $(".first").append("<div></div>");
-    $(".first").append("<div></div>");
+    $(".first").append("<img></img>");
+    $(".first").append("<img></img>");
+    $(".first").append("<img></img>");
 
-    $(".second").append("<div></div>");
-    $(".second").append("<div></div>");
-    $(".second").append("<div></div>");
+    $(".second").append("<img></img>");
+    $(".second").append("<img></img>");
+    $(".second").append("<img></img>");
 
     $(".first").css({"width": "100%", "height": "600px"});
     $(".second").css({"width": "100%", "height": "600px"});
 
-    $("div").each(function(index, element) {
+    $("img").each(function(index, element) {
         
 
         if($(element).is(".first") || $(element).is(".second")) {
@@ -25,9 +25,24 @@ $(document).ready(function() {
         }
     });
 
-    $("div.first div:first").addClass("selected");
+    $("img:first").addClass("selected");
 
-    $(".selected").css({"border": "1px solid red"});
+  
+
+
+    removeAddBorder();
+})
+
+
+
+function removeAddBorder() {
+
+    $("img:first").removeClass("selected");
+    
+    $("div").eq(1).find("img").eq(1).addClass("selected");
 
     
-})
+}
+
+
+
