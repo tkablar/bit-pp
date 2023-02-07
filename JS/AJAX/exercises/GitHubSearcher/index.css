@@ -1,0 +1,79 @@
+nav div {
+    width: 300px;
+    float: left;
+    display: block;
+    margin-left: 10%;
+}
+
+nav p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: gray;
+}
+
+nav span {
+    color: #414040;
+}
+
+input {
+    width: 30%;
+    padding: 10px;
+    border: 2px solid #414040;
+    border-radius: 50px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 15px;
+    /* background-image: url("https://icons8.com/icon/120713/search-client");
+    background-repeat: no-repeat;
+    background-position: -8px 0px; */
+}
+
+main {
+    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+main div {
+    width: 33%;
+    background-color: #a8a8a8;
+    margin: 15px auto;
+    text-align: center;
+}
+
+main div p {
+    color: #212121;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+main div img {
+    width: 90%;
+    position: relative;
+    top:15px;
+}
+
+main div button {
+    margin: 10px;
+    padding: 5px 8px;
+    background-color: #535353;
+    color: aliceblue;
+    border: solid rgb(191, 191, 191);
+    text-decoration: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+table, th, td {
+    border: 1px solid #414040;
+    text-align: center;
+}
