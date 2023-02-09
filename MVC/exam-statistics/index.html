@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script text="text/javascript" src="./js/subject.js" async></script>
+
+    <script text="text/javascript" src="./js/student.js" async></script>
+
+    <script text="text/javascript" src="./js/exam.js" async></script>
+
+    <script text="text/javascript" src="./js/form.js" async></script>
+
+    <script text="text/javascript" src="./js/app.js" async></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="statistics">
+        <h1>Exam Statistic June</h1>
+        <h3>Total students: <div id="counter">0</div></h3>
+        <div id="count-div">
+            <div id="passed"><p>PASSED</p> 
+                <div id="passed-counter">0</div>
+                <div id="passed-percent">%</div>
+            </div>
+
+            <div id="failed"> <p>FAILED</p>
+                <div id="failed-counter">0</div>
+                <div id="failed-percent">%</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <form action="">
+        <select name="subject" id="subject">
+            <option disabled selected value> - </option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Web">Web</option>
+        </select>
+
+        <input type="text" placeholder="Name Surname" id="name-surname">
+
+        <!-- <input type="text" placeholder="Surname"> -->
+
+        <input type="number" placeholder="Grade" id="grade">
+
+        <input type="button" value="ADD" onclick="validateData();" id="button">
+    </form>
+
+    <div id="results">
+        <div ><h3>PASSED</h3>
+        <ul id="passed-list">
+            <!-- <li>fghjkl</li>
+            <li>dcfvgbhkj</li> -->
+        </ul>
+        </div>
+
+        <div ><h3>FAILED</h3>
+        <ul id="failed-list"></ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>
