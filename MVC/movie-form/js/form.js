@@ -46,11 +46,11 @@ function createMovie() {
 function Program(date, listOfMovies, numberOfMovies) {
     this.date = new Date(date).toLocaleString().split(',')[0];
     this.listOfMovies = [];
-    this.numberOfMovies = this.listOfMovies.lenght;
+    this.numberOfMovies = 0;
     this.addMovie = function(movie) {
         var addMovie = movie.getData();
         this.listOfMovies.push(addMovie);
-    }
+    };
     this.getData = function() {
         var programLength = 0;
         
@@ -75,13 +75,15 @@ function Program(date, listOfMovies, numberOfMovies) {
         // console.log(this.date);
         // console.log(date);
         
-        var nesto = `${this.date}, program duration ${programLength}${moviesString}min.`;
+        var getData = `${this.date}, ${this.numberOfMovies} movies, program duration ${programLength}${moviesString}min.`;
         
-        return nesto;
+        return getData;
     }
 }
 
 function createProgram() {
+    
+
     var dateOfProgram = document.getElementById("dateOfProgram").value;
     
     var movie = $("#select-movie").value;
@@ -90,26 +92,50 @@ function createProgram() {
     var program = new Program(dateOfProgram);
     // console.log(program.getData());
 
-    $("#movies-in-program").append(`<li>${program.getData()}</li>`);
-    $("#select-program").append(`<option>${program.getData()}</option>`);
     var id = program.getData().substring(0, program.getData().indexOf(',')).replaceAll('/', '');
-    $("#movies-in-program li:last").append(`<ol id="${id}"></ol>`);
-
-    
-
-    
+    $("#movies-in-program").append(`<li id="li-${id}">${program.getData()}</li>`);
+    $("#select-program").append(`<option>${program.getData()}</option>`);
+    $("#movies-in-program li:last").append(`<ol id="ol-${id}"></ol>`);
+    // $("#dateOfProgram").val(null);
+ 
 
 }
 
 function addMovieToProgram() {
     var movie = $("#select-movie").val();
+    var movieLength = movie.split(', ')[1].split(' ')[0];
+    console.log(movie);
+    console.log(movieLength);
     var idOfList = document.getElementById("dateOfProgram").value;
     console.log(idOfList);
     var program = $("#select-program").val();
-    var id = program.substring(0, program.indexOf(',')).replaceAll('/', '');
+    var programList = program.split(', ');
+    console.log(programList)
+    
+    var id = programList[0].replaceAll('/', '');
+    var count = +programList[1].split(" ")[0];
+    var allMoviesLengthString = programList[2].split(" ")[2];
+    var allMoviesLength = allMoviesLengthString.substring(0, allMoviesLengthString.indexOf('m'));
+    console.log(programList);
+    console.log(allMoviesLength);
+    //count++;
+    //allMoviesLength += +movieLength;
+    programList[1] = programList[1].replace(count, `${+count + 1}`);
+    programList[2] = programList[2].replace(allMoviesLength, `${+allMoviesLength + +movieLength}`);
+    console.log(programList);
 
-    $(`#${id}`).append(`<li>${movie}</li>`);
+    var orderedList = $(`#ol-${id}`).append(`<li>${movie}</li>`);
     $("#select-movie").val("-");
     $("#select-program").val("-");
+
+
+
+    // var dateOfProgram = document.getElementById("select-program").value;
+    // var programTwo = new Program();
+    // programTwo.addMovie(movie);
+    // console.log("program stampaj - " + programTwo.getData())
+    var newProgramText = `${programList.join(", ")}`;
+    $(`select option:contains("${program}")`).text(newProgramText);
+    $(`#li-${id}`).text(newProgramText).append(orderedList);
 
 }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script text="text/javascript" src="./js/entities.js" async></script>
+
+    <script text="text/javascript" src="./js/form.js" async></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Movie List</h1>
+    
+    <form>
+
+        <p>Movie</p>
+
+        <fieldset id="input-form">
+            <label>Title</label>
+            <br>
+            <input type="text" placeholder="Movie title" id="movie-title">
+
+            <br>
+
+            <label >Length (min)</label>
+            <br>
+            <input type="number" name="movie-length" placeholder="Length in min" id="movie-length" required>
+
+            <br>
+
+            <select name="genre-select" id="genre-select">
+                <option disabled selected value> - </option>
+                <option >Drama</option>
+                <option >Action</option>
+                <option >Horor</option>
+                <option >Comedy</option>
+                <option >Adventure</option>
+            </select>
+
+            <div id="movie-error">
+                <!-- <p id="error">Eoror</p> -->
+            </div>
+
+            <br>
+
+            <input type="button" id="addMovie" value="ADD MOVIE" onclick="createMovie()">
+
+            <div id="movie-list">
+                <ul id="list">
+                    <!-- <li>Nesto</li>
+                    <li>Nesto</li> -->
+                </ul>
+            </div>
+
+
+
+            
+
+        </fieldset>
+
+        <p>Program</p>
+
+        <fieldset  id="program">
+            <label>Date</label>
+            <br>
+            <input type="date" id="dateOfProgram">
+            <input type="button" value="Create Program" id="create-program" onclick="createProgram()">
+
+            <div id="program-div">
+                <!-- <p id="date-p"></p> -->
+                <ul id="movies-in-program">
+            
+                </ul>
+                <hr>
+            </div>
+            <label for="">Movie</label>
+            <select name="movies" id="select-movie">
+                <option disabled selected value>-</option>
+            </select>
+
+            <label for="">Program</label>
+            <select name="programs" id="select-program">
+                <option disabled selected value>-</option>
+            </select>
+            <input type="button" id="add-movie-to-program" value="Add Movie to Program" onclick="addMovieToProgram()">
+        </fieldset>
+    </form>
+
+    
+    
+</body>
+</html>

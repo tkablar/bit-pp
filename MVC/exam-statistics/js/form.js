@@ -1,6 +1,4 @@
 
-
-
 function collectData() {
 
     var subject = document.getElementById("subject").value;
@@ -117,5 +115,5 @@ function updateStatistics() {
 
     $("#passed-percent").html(passPercent + "%");
     $("#failed-percent").html(failPercent + "%");
-    
+
 }
