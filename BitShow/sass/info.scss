@@ -1,0 +1,151 @@
+// @import "./index.scss";
+$primaryBlue:#343a40;
+$white: #f1f1f1;
+$gray: #787878;
+$textColor: #242424;
+
+$mobile: "(min-width: 300px) and (max-width: 576px)";
+$tablet: "(min-width: 577px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+
+
+#show-details {
+    text-align: justify;
+    color: $textColor;
+}
+
+li {
+    margin: 0.5em 0em;
+}
+
+@media #{$mobile} {
+    h1 {
+        margin-top: 3.5em;
+        margin-bottom: 1.5em;
+    }
+    h2 {
+        margin: 1em 0em;
+        font-weight: 900;
+    }
+    ul {
+        font-size: 1em;
+        font-weight:500;
+    }
+    #div-table {
+        width: 100%;
+        margin-bottom: 10em;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        #image {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+
+        #div-season {
+            div #seasons {
+                width: 100%;
+            }
+        }
+        
+        #div-cast {
+            div #cast {
+                width: 100%;
+            }
+        }
+
+        #div-akas {
+            width: 100%;
+        }
+        
+    }
+
+    
+}
+@media #{$tablet} {
+    h2 {
+        margin: 1em 0em;
+        font-weight: 900;
+    }
+    #div-table {
+        width: 100%;
+        margin-bottom: 10em;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        #image {
+            width: 100%;
+            img {
+                max-width: 100%;
+            }
+        }
+        #div-season {
+            width: 100%;
+            
+            #seasons {
+                 width: 100%;  
+            }
+        }
+        #div-cast {
+            width: 100%;
+            ul #cast {
+               width: 100%; 
+            }
+        }
+    }
+    
+}
+@media #{$desktop}  {
+    h2 {
+        margin: 1em 0em;
+        font-weight: 900;
+    }
+    #div-table {
+        width: 100%;
+        margin-bottom: 10em;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+
+        #div-image {
+            
+            width: 50%;
+            float: left;
+            align-items: flex-start;
+            #image {
+                width: 100%;
+                img {
+                    width: 100%;
+                
+                }
+            }
+        }
+        #season-cast {
+            display: flex;
+            width: 40%;
+            flex-direction: column;
+            float: right;
+        }
+        #div-crew {
+            width: 50%;
+        }
+        #div-akas {
+            width: 50%;
+        }
+    }
+}
+
+// body {
+//     margin: 8px !important;
+//     overflow-x: hidden !important; 
+// }
