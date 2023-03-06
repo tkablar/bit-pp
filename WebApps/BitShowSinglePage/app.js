@@ -31,9 +31,9 @@ $(document).ready(function () {
 
     // localStorage.clear();
     
-
     $(".infoPage").hide();
 
+    // show cards
     getData(showUrl).then(response => {
 
         for (let i = 0; i < 50; i++) {
@@ -44,6 +44,7 @@ $(document).ready(function () {
     }).catch(error => {
         console.log(error);
     });
+
 
     $("input").on("input", function() {
 
@@ -65,136 +66,38 @@ $(document).ready(function () {
         });
     });
 
+
     $(document).on('click', 'a', function (event) {
+
         const showId = parseInt(event.target.id);
-        console.log( "on a click >", showId)
+        // console.log( "on a click >", showId);
         localStorage.setItem("id", showId);
     });
 
 
     $(document).on('click', '.linkShow', function (event) {
 
-        const indexPage = $(".firstPage").hide();
+        $(".firstPage").hide();
 
-        const infoPage = $(".infoPage").show();
+        $(".infoPage").show();
 
-        const showId = parseInt(localStorage.getItem("id"));
+        // const showId = parseInt(localStorage.getItem("id"));
 
-        // info page
+        // infoPage --------------------------------------------------------------------------
 
         getInfoPage()
         
     });
     
 
-
-    // infoPage --------------------------------------------------------------------------
-
-
-
-    
-// const showId = parseInt(localStorage.getItem("id"));
-// console.log(showId);
-
-// console.log("local storage > ", localStorage)
-    
-// const url1 = `http://api.tvmaze.com/shows/${showId}`;
-
-// const url2 = `https://api.tvmaze.com/shows/${showId}/seasons`;
-
-// const url3 = `https://api.tvmaze.com/shows/${showId}/cast`;
-
-// const url4 = `https://api.tvmaze.com/shows/${showId}/crew`;
-
-// const url5 = `https://api.tvmaze.com/shows/${showId}/akas`;
-
-// const url6 = `https://api.tvmaze.com/shows/${showId}/episodes`;
-
-
-//     getData(url1).then(response => {
-
-//         const show = new ShowInfoBasic(response.name, response.image.original, response.summary)
-//         createShowInfo(show);
-//     }).catch(error => {
-//         console.log(error)
-//     })
-
-
-//     getBasicInfo(url2).then(response => {
-//         // console.log("seasons response " + response);
-
-//         for(var i = 0; i < response.length; i++) {
-//             const seasons = new Seasons(response[i].premiereDate, response[i].endDate);
-//             createSeasons(seasons);
-//         }
-
-//     }).catch(error => {
-//         console.log(error);
-//     })
-
-//     getBasicInfo(url3).then(response => {
-//         // console.log("cast response > ", response);
-
-//         for(var i = 0; i < response.length; i++) { 
-//             const name2 = new Cast(response[i].person.name);
-
-//             createCast(name2);
-//         }
-
-//     }).catch(error => {
-//         console.log(error);
-//     })
-
-//     getData(url4).then(response => {
-//         // console.log("ovo je crew response", response);
-
-//         for(var i = 0; i < response.length; i++) {
-//             const crew = new Crew(response[i].person.name, response[i].type);
-
-//             createCrew(crew);
-//         }
-//     }).catch(error => {
-//         console.log(error);
-//     });
-
-//     getData(url5).then(response => {
-//         // console.log("ovo je akas response ", response);
-
-//         for(var i=0; i < response.length; i++) {
-//             const akas = new Akas(response[i].name, response[i].country.name);
-
-//             createAkas(akas)
-//         }
-//     }).catch(error => {
-//         console.log(error);
-//     });
-
-//     getData(url6).then(response => {
-//         // console.log("ovo je episode response", response);
-
-//         for(var i=0; i < response.length; i++) {
-//             const episodes = new Episodes(response[i].season, response[i].number, response[i].name, response[i].url);
-
-//             createEpisodes(episodes);
-//         }
-
-//     }).catch(error => {
-//         console.log(error);
-//     });
-
     $(document).on('click', '#logoP', function (event) {
 
+        $(".infoPage").hide();
 
-        const infoPage = $(".infoPage").hide();
+        $(".firstPage").show();
 
-        const indexPage = $(".firstPage").show();
-
-        
-       
     });
 
-
-   
 })
 
 function getInfoPage() {
@@ -203,9 +106,9 @@ function getInfoPage() {
 
         const showId = parseInt(localStorage.getItem("id"));
         
-        console.log(showId);
+        // console.log(showId);
 
-        console.log("local storage > ", localStorage)
+        // console.log("local storage > ", localStorage)
             
         const url1 = `http://api.tvmaze.com/shows/${showId}`;
 
@@ -219,7 +122,7 @@ function getInfoPage() {
 
         const url6 = `https://api.tvmaze.com/shows/${showId}/episodes`;
 
-
+            // get Image, Title and Summary
             getData(url1).then(response => {
 
                 const show = new ShowInfoBasic(response.name, response.image.original, response.summary)
@@ -228,7 +131,7 @@ function getInfoPage() {
                 console.log(error)
             })
 
-
+            // get Season
             getData(url2).then(response => {
                 console.log("seasons response " + response);
 
@@ -241,6 +144,7 @@ function getInfoPage() {
                 console.log(error);
             })
 
+            // get Cast
             getData(url3).then(response => {
                 // console.log("cast response > ", response);
 
@@ -254,6 +158,7 @@ function getInfoPage() {
                 console.log(error);
             })
 
+            // get Crew
             getData(url4).then(response => {
                 // console.log("ovo je crew response", response);
 
@@ -266,6 +171,7 @@ function getInfoPage() {
                 console.log(error);
             });
 
+            // get Akas
             getData(url5).then(response => {
                 // console.log("ovo je akas response ", response);
 
@@ -278,6 +184,7 @@ function getInfoPage() {
                 console.log(error);
             });
 
+            //get Episode  list
             getData(url6).then(response => {
                 // console.log("ovo je episode response", response);
 
