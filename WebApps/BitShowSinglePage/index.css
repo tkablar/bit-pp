@@ -1,0 +1,200 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+header {
+  background-color: #343a40;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  vertical-align: baseline; }
+
+nav {
+  color: #f1f1f1;
+  height: 4em;
+  position: relative;
+  top: 1em; }
+
+.logo {
+  display: inline-block;
+  font-weight: 700; }
+  .logo #logo {
+    text-decoration: none;
+    color: #f1f1f1; }
+
+.search-bar {
+  background-color: #f1f1f1;
+  text-align: left;
+  float: right;
+  border-radius: 0.5em;
+  padding: 0.2em 0.5em; }
+
+.search-bar:focus {
+  background-color: #f1f1f1;
+  color: #787878;
+  text-align: left;
+  float: right;
+  border-radius: 0.5em;
+  padding: 0.2em 0.5em; }
+
+.search-bar:hover {
+  background-color: #f1f1f1;
+  color: #787878;
+  text-align: left; }
+
+h1 {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-weight: 700; }
+
+.list-of-movies {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  margin-bottom: 6em; }
+  .list-of-movies .movie {
+    margin: 0em 0.5em;
+    width: 30%;
+    margin: 15px auto;
+    text-align: center;
+    border: 0.1em solid #787878;
+    padding-bottom: 0.8em; }
+  .list-of-movies img {
+    width: 100%; }
+  .list-of-movies a {
+    text-decoration: none; }
+
+footer {
+  background-color: #343a40;
+  color: #f1f1f1;
+  height: 4em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center; }
+  footer p {
+    position: relative;
+    top: 1.2em; }
+
+@media (min-width: 300px) and (max-width: 576px) {
+  .list-of-movies {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em; }
+    .list-of-movies .movie {
+      margin: 0em 0.5em;
+      width: 45%;
+      margin: 15px auto;
+      text-align: center;
+      border: 0.1em solid #787878;
+      padding-bottom: 0.8em; } }
+@media (min-width: 1024px) {
+  .list-of-movies {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    margin-bottom: 6em; }
+    .list-of-movies .movie {
+      margin: 0em 0.5em;
+      width: 22%;
+      margin: 15px auto;
+      text-align: center;
+      border: 0.1em solid #787878;
+      padding-bottom: 0.8em; } }
+
+/*# sourceMappingURL=index.css.map */
+
+/* infoPage part */
+
+#show-details {
+  text-align: justify;
+  color: #242424; }
+
+li {
+  margin: 0.5em 0em; }
+
+@media (min-width: 300px) and (max-width: 576px) {
+  h1 {
+    margin-top: 3.5em;
+    margin-bottom: 1.5em; }
+
+  h2 {
+    margin: 1em 0em;
+    font-weight: 900; }
+
+  ul {
+    font-size: 1em;
+    font-weight: 500; }
+
+  #div-table {
+    width: 100%;
+    margin-bottom: 10em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    #div-table #image {
+      width: 100%; }
+      #div-table #image img {
+        width: 100%; }
+    #div-table #div-season div #seasons {
+      width: 100%; }
+    #div-table #div-cast div #cast {
+      width: 100%; }
+    #div-table #div-akas {
+      width: 100%; } }
+@media (min-width: 577px) and (max-width: 1023px) {
+  h2 {
+    margin: 1em 0em;
+    font-weight: 900; }
+
+  #div-table {
+    width: 100%;
+    margin-bottom: 10em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto; }
+    #div-table #image {
+      width: 100%; }
+      #div-table #image img {
+        max-width: 100%; }
+    #div-table #div-season {
+      width: 100%; }
+      #div-table #div-season #seasons {
+        width: 100%; }
+    #div-table #div-cast {
+      width: 100%; }
+      #div-table #div-cast ul #cast {
+        width: 100%; } }
+@media (min-width: 1024px) {
+  h2 {
+    margin: 1em 0em;
+    font-weight: 900; }
+
+  #div-table {
+    width: 100%;
+    margin-bottom: 10em;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap; }
+    #div-table #div-image {
+      width: 50%;
+      float: left;
+      align-items: flex-start; }
+      #div-table #div-image #image {
+        width: 100%; }
+        #div-table #div-image #image img {
+          width: 100%; }
+    #div-table #season-cast {
+      display: flex;
+      width: 40%;
+      flex-direction: column;
+      float: right; }
+    #div-table #div-crew {
+      width: 50%; }
+    #div-table #div-akas {
+      width: 50%; } }

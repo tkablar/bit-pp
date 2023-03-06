@@ -1,0 +1,48 @@
+body {
+    background-color: #6898c5;
+}
+
+/* div.container {
+    margin: 5em auto;
+} */
+h1 {
+    text-align: center;
+    margin: 1em auto;
+    color: antiquewhite;
+    font-size: 3em;
+}
+
+#paragraph {
+    display: flex;
+}
+p {
+    margin: 1em auto;
+    width: 20em;
+    font-size: 1.5em;
+    color: #cae0f5;
+    text-align: center;
+}
+
+#button {
+    margin: 0em auto;
+    display: flex;
+    /* position: relative; */
+    /* top: 16em; */
+}
+
+button {
+    margin: 1em auto;
+    width: 10em;
+    padding: 1em;
+    font-size: 1.2em;
+    background-color: #ffda22;
+    border: none;
+    border-radius: 10px;
+    color: #0b2c4b;
+    font-weight: 900;
+}
+
+button:hover {
+    background-color: #675912;
+    color: aliceblue;
+}

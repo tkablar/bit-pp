@@ -1,0 +1,29 @@
+body {
+    background-color: #07b0c7;
+}
+
+h1 {
+    text-align: center;
+    padding: 1em;
+    color: #0f3691;
+}
+
+.container {
+    display: flex;
+}
+
+#image {
+    width: 50%;  
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-top: 1em;
+    list-style-type: none;
+    color: #0f3691;
+}
